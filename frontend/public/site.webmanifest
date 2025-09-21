@@ -1,0 +1,21 @@
+{
+  "name": "PRISAA Sports Management System",
+  "short_name": "PRISAA SMS",
+  "description": "The Official Sports Management System of PRISAA Sports Foundation, Inc. Track leaderboards, manage athletes, events, scores, and records efficiently.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-PH",
+  "categories": ["sports", "management", "education"],
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
