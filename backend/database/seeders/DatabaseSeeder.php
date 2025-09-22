@@ -13,34 +13,29 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // First, seed roles and permissions
-        $this->call(RolePermissionSeeder::class);
+        // Call your seeders in the correct order
+        $this->call([
+            RolePermissionSeeder::class,
+            DivisionsSeeder::class,
+            SportsSeeder::class,
+            RegionsSeeder::class,
+            ProvincesSeeder::class,
+            SchoolsSeeder::class,
+            AthletesSeeder::class,
+            SportSubcategoriesSeeder::class,
+            TournamentLevelsSeeder::class,
+            TournamentsSeeder::class,
+        ]);
 
-        // Seed regions data
-        $this->call(RegionSeeder::class);
-
-        // Seed schools data
-        $this->call(SchoolSeeder::class);
-
-        // Seed sports data
-        $this->call(SportSeeder::class);
-
-        // Seed venues data
-        $this->call(VenueSeeder::class);
-
-        // Seed tournaments data
-        $this->call(TournamentSeeder::class);
-
-        // Create admin user
+        // Create sample users
         $adminUser = User::create([
             'first_name' => 'Admin',
             'last_name'  => 'User',
             'email'      => 'admin@prisaa.com',
-            'password'   => Hash::make('admin123'), // bcrypt hash
+            'password'   => Hash::make('admin123'),
             'role'       => 'admin',
         ]);
 
-        // Create coach user
         $coachUser = User::create([
             'first_name' => 'Coach',
             'last_name'  => 'User',
@@ -49,7 +44,6 @@ class DatabaseSeeder extends Seeder
             'role'       => 'coach',
         ]);
 
-        // Create tournament manager user
         $tournamentManagerUser = User::create([
             'first_name' => 'Tournament',
             'last_name'  => 'Manager',
@@ -58,13 +52,9 @@ class DatabaseSeeder extends Seeder
             'role'       => 'tournament_manager',
         ]);
 
-        // Assign roles to users
+        // Assign roles
         $adminUser->assignRole('admin');
         $coachUser->assignRole('coach');
         $tournamentManagerUser->assignRole('tournament_manager');
-
-        // Seed other data
-        $this->call(SchoolSeeder::class);
-        $this->call(SportSeeder::class);
     }
 }
