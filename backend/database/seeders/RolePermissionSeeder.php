@@ -122,20 +122,24 @@ class RolePermissionSeeder extends Seeder
             // System Settings
             'view-settings',
             'edit-settings',
-            
-            // Reports
-            'view-reports',
-            'generate-reports',
-        ];
+                
+                // Reports
+                'view-reports',
+                'generate-reports',
+            ];
 
-        foreach ($permissions as $permission) {
-            Permission::firstOrCreate(['name' => $permission]);
-        }
+            foreach ($permissions as $permission) {
+    Permission::firstOrCreate(
+        ['name' => $permission],
+        ['guard_name' => 'web'] // 🔹 specify guard
+    );
+}
 
-        // Create Roles
-        $adminRole = Role::firstOrCreate(['name' => 'admin']);
-        $coachRole = Role::firstOrCreate(['name' => 'coach']);
-        $tournamentManagerRole = Role::firstOrCreate(['name' => 'tournament_manager']);
+// Create Roles with guard_name
+$adminRole = Role::firstOrCreate(['name' => 'admin'], ['guard_name' => 'web']);
+$coachRole = Role::firstOrCreate(['name' => 'coach'], ['guard_name' => 'web']);
+$tournamentManagerRole = Role::firstOrCreate(['name' => 'tournament_manager'], ['guard_name' => 'web']);
+
 
         // Assign permissions to roles
         

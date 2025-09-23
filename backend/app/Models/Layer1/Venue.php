@@ -4,9 +4,6 @@ namespace App\Models\Layer1;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use App\Models\Layer1\School;
-use App\Models\Layer1\Province;
-use App\Models\Layer1\Region;
 
 class Venue extends Model
 {

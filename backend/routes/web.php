@@ -1,6 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\AuthController;
+use App\Http\Controllers\Layer2\TeamAthleteController;
+Route::prefix('teams/{team}')->group(function () {
+    Route::get('athletes', [TeamAthleteController::class, 'index']);
+    Route::post('athletes', [TeamAthleteController::class, 'store']);
+    Route::delete('athletes/{athlete}', [TeamAthleteController::class, 'destroy']);
+});
+
 
 Route::get('/', function () {
     return response()->json([

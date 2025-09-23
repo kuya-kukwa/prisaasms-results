@@ -5,6 +5,7 @@ namespace App\Models\Layer2;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use App\Models\Layer2\Sport;
+use App\Models\Layer1\User;
 use App\Models\Layer2\WeightClass;
 
 class SportSubcategory extends Model
@@ -22,4 +23,14 @@ class SportSubcategory extends Model
     {
         return $this->hasMany(WeightClass::class);
     }
+    public function officials()
+{
+    return $this->belongsToMany(
+        User::class,
+        'officials_sport_subcategory',
+        'sport_subcategory_id',
+        'official_id'
+    )->withTimestamps()->withPivot('deleted_at');
+}
+
 }

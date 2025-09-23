@@ -8,27 +8,22 @@ use App\Models\Layer1\School;
 use App\Models\Layer1\Division;
 use App\Models\Layer2\Sport;
 use App\Models\Layer2\Team;
-
+use Illuminate\Database\Eloquent\SoftDeletes;
 class Athlete extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'first_name',
-        'last_name',
-        'email',
-        'gender',
-        'birthdate',
-        'avatar',
-        'school_id',
-        'division_id',
-        'athlete_number',
-        'status'
-    ];
+    'first_name',
+    'last_name',
+    'gender',
+    'birthdate',
+    'school_id',
+    'weight_class_id',
+];
 
-    protected $casts = [
-        'birthdate' => 'date',
-    ];
+    protected $dates = ['birthdate'];
+   
 
     public function school()
     {
@@ -59,4 +54,5 @@ class Athlete extends Model
     {
         return $this->birthdate ? $this->birthdate->age : 0;
     }
+    
 }

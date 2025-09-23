@@ -2,7 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
+use App\Models\Layer1\User;
+use Database\Seeders\RolePermissionSeeder;
+use Database\Seeders\RegionSeeder;
+use Database\Seeders\ProvinceSeeder;
+use Database\Seeders\DivisionSeeder;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
@@ -12,49 +16,31 @@ class DatabaseSeeder extends Seeder
      * Seed the application's database.
      */
     public function run(): void
-    {
-        // Call your seeders in the correct order
-        $this->call([
+        {
+            $this->call([
             RolePermissionSeeder::class,
-            DivisionsSeeder::class,
-            SportsSeeder::class,
-            RegionsSeeder::class,
-            ProvincesSeeder::class,
-            SchoolsSeeder::class,
-            AthletesSeeder::class,
-            SportSubcategoriesSeeder::class,
-            TournamentLevelsSeeder::class,
-            TournamentsSeeder::class,
-        ]);
+            RegionSeeder::class,
+            ProvinceSeeder::class,
+            
+            ]);
 
-        // Create sample users
-        $adminUser = User::create([
-            'first_name' => 'Admin',
-            'last_name'  => 'User',
-            'email'      => 'admin@prisaa.com',
-            'password'   => Hash::make('admin123'),
-            'role'       => 'admin',
-        ]);
+        // Users
+        $adminUser = User::firstOrCreate(
+            ['email' => 'admin@prisaa.com'],
+            ['first_name'=>'Admin','last_name'=>'User','password'=>Hash::make('admin123'),'role'=>'admin']
+        );
+        $coachUser = User::firstOrCreate(
+            ['email' => 'coach@prisaa.com'],
+            ['first_name'=>'Coach','last_name'=>'User','password'=>Hash::make('coach123'),'role'=>'coach']
+        );
+        $tournamentManagerUser = User::firstOrCreate(
+            ['email' => 'manager@prisaa.com'],
+            ['first_name'=>'Tournament','last_name'=>'Manager','password'=>Hash::make('manager123'),'role'=>'tournament_manager']
+        );
 
-        $coachUser = User::create([
-            'first_name' => 'Coach',
-            'last_name'  => 'User',
-            'email'      => 'coach@prisaa.com',
-            'password'   => Hash::make('coach123'),
-            'role'       => 'coach',
-        ]);
-
-        $tournamentManagerUser = User::create([
-            'first_name' => 'Tournament',
-            'last_name'  => 'Manager',
-            'email'      => 'manager@prisaa.com',
-            'password'   => Hash::make('manager123'),
-            'role'       => 'tournament_manager',
-        ]);
-
-        // Assign roles
+        // Assign roles if using Spatie
         $adminUser->assignRole('admin');
         $coachUser->assignRole('coach');
         $tournamentManagerUser->assignRole('tournament_manager');
-    }
+            }
 }

@@ -89,8 +89,11 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-public-schools--school_id-">
                                 <a href="#endpoints-GETapi-public-schools--school_id-">Display the specified resource.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-public-schools-region--region-">
-                                <a href="#endpoints-GETapi-public-schools-region--region-">Get schools by region.</a>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-public-schools-region--regionId-">
+                                <a href="#endpoints-GETapi-public-schools-region--regionId-">Get schools by region.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-public-schools-statistics-overall">
+                                <a href="#endpoints-GETapi-public-schools-statistics-overall">Get overall system statistics.</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-public-sports">
                                 <a href="#endpoints-GETapi-public-sports">Display a listing of the resource.</a>
@@ -155,6 +158,9 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-public-tournaments-completed">
                                 <a href="#endpoints-GETapi-public-tournaments-completed">Get completed tournaments.</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-public-users-online">
+                                <a href="#endpoints-GETapi-public-users-online">Get online coaches and tournament managers.</a>
+                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-auth-logout">
                                 <a href="#endpoints-POSTapi-auth-logout">Logout user.</a>
                             </li>
@@ -175,6 +181,9 @@
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-users-role--role-">
                                 <a href="#endpoints-GETapi-users-role--role-">Get users by role.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-users-online">
+                                <a href="#endpoints-GETapi-users-online">Get online coaches and tournament managers.</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-users-profile">
                                 <a href="#endpoints-GETapi-users-profile">Get user profile (for authenticated user).</a>
@@ -578,6 +587,132 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-test-coach">
                                 <a href="#endpoints-GETapi-test-coach">GET api/test-coach</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-dashboard-stats">
+                                <a href="#endpoints-GETapi-admin-dashboard-stats">Get dashboard statistics</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-schedules">
+                                <a href="#endpoints-GETapi-admin-schedules">Admin index - List all schedules with admin features.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-schedules-stats">
+                                <a href="#endpoints-GETapi-admin-schedules-stats">Get admin statistics for schedules.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-admin-schedules">
+                                <a href="#endpoints-POSTapi-admin-schedules">Store a newly created resource in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-schedules--schedule_id-">
+                                <a href="#endpoints-GETapi-admin-schedules--schedule_id-">Display the specified resource.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-admin-schedules--schedule_id-">
+                                <a href="#endpoints-PUTapi-admin-schedules--schedule_id-">Update the specified resource in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-admin-schedules--schedule_id-">
+                                <a href="#endpoints-DELETEapi-admin-schedules--schedule_id-">Remove the specified resource from storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-PATCHapi-admin-schedules--schedule_id--status">
+                                <a href="#endpoints-PATCHapi-admin-schedules--schedule_id--status">Update schedule status.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-profiles">
+                                <a href="#endpoints-GETapi-admin-profiles">GET api/admin/profiles</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-profiles-stats">
+                                <a href="#endpoints-GETapi-admin-profiles-stats">Get user statistics for admin dashboard</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-admin-profiles">
+                                <a href="#endpoints-POSTapi-admin-profiles">Store a newly created resource in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-profiles--user-">
+                                <a href="#endpoints-GETapi-admin-profiles--user-">Display the specified resource.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-admin-profiles--user-">
+                                <a href="#endpoints-PUTapi-admin-profiles--user-">Update the specified resource in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-admin-profiles--type---user-">
+                                <a href="#endpoints-DELETEapi-admin-profiles--type---user-">Remove the specified resource from storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-tournaments">
+                                <a href="#endpoints-GETapi-admin-tournaments">Admin listing for tournaments (paginated)</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-admin-tournaments">
+                                <a href="#endpoints-POSTapi-admin-tournaments">Store a newly created resource in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-tournaments--tournament_id-">
+                                <a href="#endpoints-GETapi-admin-tournaments--tournament_id-">Display the specified resource.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-admin-tournaments--tournament_id-">
+                                <a href="#endpoints-PUTapi-admin-tournaments--tournament_id-">Update the specified resource in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-admin-tournaments--tournament_id-">
+                                <a href="#endpoints-DELETEapi-admin-tournaments--tournament_id-">Remove the specified resource from storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-PATCHapi-admin-tournaments--tournament_id--status">
+                                <a href="#endpoints-PATCHapi-admin-tournaments--tournament_id--status">Update tournament status.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-sports">
+                                <a href="#endpoints-GETapi-admin-sports">Get all sports for admin management</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-sports-stats">
+                                <a href="#endpoints-GETapi-admin-sports-stats">Get sports statistics for admin dashboard</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-admin-sports">
+                                <a href="#endpoints-POSTapi-admin-sports">Store a newly created resource in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-sports--sport_id-">
+                                <a href="#endpoints-GETapi-admin-sports--sport_id-">Display the specified resource.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-admin-sports--sport_id-">
+                                <a href="#endpoints-PUTapi-admin-sports--sport_id-">Update the specified resource in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-admin-sports--sport_id-">
+                                <a href="#endpoints-DELETEapi-admin-sports--sport_id-">Remove the specified resource from storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-PATCHapi-admin-sports--sport_id--status">
+                                <a href="#endpoints-PATCHapi-admin-sports--sport_id--status">Update sport status</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-sports-category--category-">
+                                <a href="#endpoints-GETapi-admin-sports-category--category-">Get sports by category.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-venues">
+                                <a href="#endpoints-GETapi-admin-venues">Get all venues for admin management</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-venues-stats">
+                                <a href="#endpoints-GETapi-admin-venues-stats">Get venue statistics for admin dashboard</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-admin-venues">
+                                <a href="#endpoints-POSTapi-admin-venues">Store a newly created resource in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-venues--venue_id-">
+                                <a href="#endpoints-GETapi-admin-venues--venue_id-">Display the specified resource.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-admin-venues--venue_id-">
+                                <a href="#endpoints-PUTapi-admin-venues--venue_id-">Update the specified resource in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-admin-venues--venue_id-">
+                                <a href="#endpoints-DELETEapi-admin-venues--venue_id-">Remove the specified resource from storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-venues-region--region-">
+                                <a href="#endpoints-GETapi-admin-venues-region--region-">Get venues by region.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-regions">
+                                <a href="#endpoints-GETapi-admin-regions">Display a listing of the resource.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-admin-regions">
+                                <a href="#endpoints-POSTapi-admin-regions">Store a newly created resource in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-regions--region_id-">
+                                <a href="#endpoints-GETapi-admin-regions--region_id-">Display the specified resource.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-admin-regions--region_id-">
+                                <a href="#endpoints-PUTapi-admin-regions--region_id-">Update the specified resource in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-admin-regions--region_id-">
+                                <a href="#endpoints-DELETEapi-admin-regions--region_id-">Remove the specified resource from storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-regions-status--status-">
+                                <a href="#endpoints-GETapi-admin-regions-status--status-">Get regions by status.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-admin-regions--region_id--statistics">
+                                <a href="#endpoints-GETapi-admin-regions--region_id--statistics">Get region statistics.</a>
+                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-documentation">
                                 <a href="#endpoints-GETapi-documentation">GET api/documentation</a>
                             </li>
@@ -595,7 +730,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: September 3, 2025</li>
+        <li>Last updated: September 21, 2025</li>
     </ul>
 </div>
 
@@ -1104,11 +1239,207 @@ access-control-allow-credentials: true
     &quot;message&quot;: &quot;Schools retrieved successfully&quot;,
     &quot;data&quot;: {
         &quot;current_page&quot;: 1,
-        &quot;data&quot;: [],
+        &quot;data&quot;: [
+            {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;Bicol University&quot;,
+                &quot;short_name&quot;: &quot;BU&quot;,
+                &quot;address&quot;: &quot;Rizal Street, Legazpi City, Albay&quot;,
+                &quot;region_id&quot;: 8,
+                &quot;logo&quot;: null,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;region&quot;: {
+                    &quot;id&quot;: 8,
+                    &quot;name&quot;: &quot;Region V - Bicol Region&quot;
+                }
+            },
+            {
+                &quot;id&quot;: 2,
+                &quot;name&quot;: &quot;Divine Word College of Legazpi&quot;,
+                &quot;short_name&quot;: &quot;DWCL&quot;,
+                &quot;address&quot;: &quot;Pe&ntilde;afrancia Avenue, Legazpi City, Albay&quot;,
+                &quot;region_id&quot;: 8,
+                &quot;logo&quot;: null,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;region&quot;: {
+                    &quot;id&quot;: 8,
+                    &quot;name&quot;: &quot;Region V - Bicol Region&quot;
+                }
+            },
+            {
+                &quot;id&quot;: 3,
+                &quot;name&quot;: &quot;Sorsogon State University&quot;,
+                &quot;short_name&quot;: &quot;SSU&quot;,
+                &quot;address&quot;: &quot;Sorsogon State University, Sorsogon City&quot;,
+                &quot;region_id&quot;: 8,
+                &quot;logo&quot;: null,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;region&quot;: {
+                    &quot;id&quot;: 8,
+                    &quot;name&quot;: &quot;Region V - Bicol Region&quot;
+                }
+            },
+            {
+                &quot;id&quot;: 4,
+                &quot;name&quot;: &quot;University of Saint Anthony&quot;,
+                &quot;short_name&quot;: &quot;USA&quot;,
+                &quot;address&quot;: &quot;Iriga City, Camarines Sur&quot;,
+                &quot;region_id&quot;: 8,
+                &quot;logo&quot;: null,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;region&quot;: {
+                    &quot;id&quot;: 8,
+                    &quot;name&quot;: &quot;Region V - Bicol Region&quot;
+                }
+            },
+            {
+                &quot;id&quot;: 5,
+                &quot;name&quot;: &quot;Naga College Foundation&quot;,
+                &quot;short_name&quot;: &quot;NCF&quot;,
+                &quot;address&quot;: &quot;Naga City, Camarines Sur&quot;,
+                &quot;region_id&quot;: 8,
+                &quot;logo&quot;: null,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;region&quot;: {
+                    &quot;id&quot;: 8,
+                    &quot;name&quot;: &quot;Region V - Bicol Region&quot;
+                }
+            },
+            {
+                &quot;id&quot;: 6,
+                &quot;name&quot;: &quot;University of the Philippines Diliman&quot;,
+                &quot;short_name&quot;: &quot;UP Diliman&quot;,
+                &quot;address&quot;: &quot;University of the Philippines Diliman, Quezon City&quot;,
+                &quot;region_id&quot;: 1,
+                &quot;logo&quot;: null,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;region&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;National Capital Region&quot;
+                }
+            },
+            {
+                &quot;id&quot;: 7,
+                &quot;name&quot;: &quot;Ateneo de Manila University&quot;,
+                &quot;short_name&quot;: &quot;Ateneo&quot;,
+                &quot;address&quot;: &quot;Katipunan Avenue, Quezon City&quot;,
+                &quot;region_id&quot;: 1,
+                &quot;logo&quot;: null,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;region&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;National Capital Region&quot;
+                }
+            },
+            {
+                &quot;id&quot;: 8,
+                &quot;name&quot;: &quot;De La Salle University&quot;,
+                &quot;short_name&quot;: &quot;DLSU&quot;,
+                &quot;address&quot;: &quot;2401 Taft Avenue, Manila&quot;,
+                &quot;region_id&quot;: 1,
+                &quot;logo&quot;: null,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;region&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;National Capital Region&quot;
+                }
+            },
+            {
+                &quot;id&quot;: 9,
+                &quot;name&quot;: &quot;University of Cagayan Valley&quot;,
+                &quot;short_name&quot;: &quot;UCV&quot;,
+                &quot;address&quot;: &quot;University of Cagayan Valley, Tuguegarao City, Cagayan Valley&quot;,
+                &quot;region_id&quot;: 4,
+                &quot;logo&quot;: null,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;region&quot;: {
+                    &quot;id&quot;: 4,
+                    &quot;name&quot;: &quot;Region II - Cagayan Valley&quot;
+                }
+            },
+            {
+                &quot;id&quot;: 10,
+                &quot;name&quot;: &quot;Saint Louis University&quot;,
+                &quot;short_name&quot;: &quot;SLU&quot;,
+                &quot;address&quot;: &quot;Bontoc, Mountain Province&quot;,
+                &quot;region_id&quot;: 2,
+                &quot;logo&quot;: null,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;region&quot;: {
+                    &quot;id&quot;: 2,
+                    &quot;name&quot;: &quot;Cordillera Administrative Region&quot;
+                }
+            },
+            {
+                &quot;id&quot;: 11,
+                &quot;name&quot;: &quot;University of San Carlos&quot;,
+                &quot;short_name&quot;: &quot;USC&quot;,
+                &quot;address&quot;: &quot;P. del Rosario Street, Cebu City&quot;,
+                &quot;region_id&quot;: 10,
+                &quot;logo&quot;: null,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;region&quot;: {
+                    &quot;id&quot;: 10,
+                    &quot;name&quot;: &quot;Region VII - Central Visayas&quot;
+                }
+            },
+            {
+                &quot;id&quot;: 12,
+                &quot;name&quot;: &quot;STI West Negros University&quot;,
+                &quot;short_name&quot;: &quot;STI WNU&quot;,
+                &quot;address&quot;: &quot;STI West Negros University, Bacolod City&quot;,
+                &quot;region_id&quot;: 9,
+                &quot;logo&quot;: null,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;region&quot;: {
+                    &quot;id&quot;: 9,
+                    &quot;name&quot;: &quot;Region VI - Western Visayas&quot;
+                }
+            },
+            {
+                &quot;id&quot;: 13,
+                &quot;name&quot;: &quot;University of Mindanao&quot;,
+                &quot;short_name&quot;: &quot;UM&quot;,
+                &quot;address&quot;: &quot;Bolton Street, Davao City&quot;,
+                &quot;region_id&quot;: 14,
+                &quot;logo&quot;: null,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;region&quot;: {
+                    &quot;id&quot;: 14,
+                    &quot;name&quot;: &quot;Region XI - Davao Region&quot;
+                }
+            },
+            {
+                &quot;id&quot;: 14,
+                &quot;name&quot;: &quot;Ateneo de Davao University&quot;,
+                &quot;short_name&quot;: &quot;AdDU&quot;,
+                &quot;address&quot;: &quot;E. Jacinto Street, Davao City&quot;,
+                &quot;region_id&quot;: 14,
+                &quot;logo&quot;: null,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;region&quot;: {
+                    &quot;id&quot;: 14,
+                    &quot;name&quot;: &quot;Region XI - Davao Region&quot;
+                }
+            },
+            {
+                &quot;id&quot;: 15,
+                &quot;name&quot;: &quot;University of Southern Mindanao&quot;,
+                &quot;short_name&quot;: &quot;USM&quot;,
+                &quot;address&quot;: &quot;Kabacan, Cotabato&quot;,
+                &quot;region_id&quot;: 15,
+                &quot;logo&quot;: null,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;region&quot;: {
+                    &quot;id&quot;: 15,
+                    &quot;name&quot;: &quot;Region XII - SOCCSKSARGEN&quot;
+                }
+            }
+        ],
         &quot;first_page_url&quot;: &quot;http://localhost:8000/api/public/schools?page=1&quot;,
-        &quot;from&quot;: null,
-        &quot;last_page&quot;: 1,
-        &quot;last_page_url&quot;: &quot;http://localhost:8000/api/public/schools?page=1&quot;,
+        &quot;from&quot;: 1,
+        &quot;last_page&quot;: 12,
+        &quot;last_page_url&quot;: &quot;http://localhost:8000/api/public/schools?page=12&quot;,
         &quot;links&quot;: [
             {
                 &quot;url&quot;: null,
@@ -1123,18 +1454,84 @@ access-control-allow-credentials: true
                 &quot;active&quot;: true
             },
             {
-                &quot;url&quot;: null,
+                &quot;url&quot;: &quot;http://localhost:8000/api/public/schools?page=2&quot;,
+                &quot;label&quot;: &quot;2&quot;,
+                &quot;page&quot;: 2,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/public/schools?page=3&quot;,
+                &quot;label&quot;: &quot;3&quot;,
+                &quot;page&quot;: 3,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/public/schools?page=4&quot;,
+                &quot;label&quot;: &quot;4&quot;,
+                &quot;page&quot;: 4,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/public/schools?page=5&quot;,
+                &quot;label&quot;: &quot;5&quot;,
+                &quot;page&quot;: 5,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/public/schools?page=6&quot;,
+                &quot;label&quot;: &quot;6&quot;,
+                &quot;page&quot;: 6,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/public/schools?page=7&quot;,
+                &quot;label&quot;: &quot;7&quot;,
+                &quot;page&quot;: 7,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/public/schools?page=8&quot;,
+                &quot;label&quot;: &quot;8&quot;,
+                &quot;page&quot;: 8,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/public/schools?page=9&quot;,
+                &quot;label&quot;: &quot;9&quot;,
+                &quot;page&quot;: 9,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/public/schools?page=10&quot;,
+                &quot;label&quot;: &quot;10&quot;,
+                &quot;page&quot;: 10,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/public/schools?page=11&quot;,
+                &quot;label&quot;: &quot;11&quot;,
+                &quot;page&quot;: 11,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/public/schools?page=12&quot;,
+                &quot;label&quot;: &quot;12&quot;,
+                &quot;page&quot;: 12,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/public/schools?page=2&quot;,
                 &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
-                &quot;page&quot;: null,
+                &quot;page&quot;: 2,
                 &quot;active&quot;: false
             }
         ],
-        &quot;next_page_url&quot;: null,
+        &quot;next_page_url&quot;: &quot;http://localhost:8000/api/public/schools?page=2&quot;,
         &quot;path&quot;: &quot;http://localhost:8000/api/public/schools&quot;,
         &quot;per_page&quot;: 15,
         &quot;prev_page_url&quot;: null,
-        &quot;to&quot;: null,
-        &quot;total&quot;: 0
+        &quot;to&quot;: 15,
+        &quot;total&quot;: 168
     }
 }</code>
  </pre>
@@ -1223,14 +1620,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/public/schools/17" \
+    --get "http://localhost:8000/api/public/schools/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/public/schools/17"
+    "http://localhost:8000/api/public/schools/1"
 );
 
 const headers = {
@@ -1247,7 +1644,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-public-schools--school_id-">
             <blockquote>
-            <p>Example response (404):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -1260,7 +1657,41 @@ access-control-allow-credentials: true
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;No query results for model [App\\Models\\School] 17&quot;
+    &quot;success&quot;: true,
+    &quot;message&quot;: &quot;School retrieved successfully&quot;,
+    &quot;data&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Bicol University&quot;,
+        &quot;short_name&quot;: &quot;BU&quot;,
+        &quot;address&quot;: &quot;Rizal Street, Legazpi City, Albay&quot;,
+        &quot;logo&quot;: null,
+        &quot;status&quot;: &quot;active&quot;,
+        &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+        &quot;region_id&quot;: 8,
+        &quot;athletes&quot;: [
+            {
+                &quot;id&quot;: 2,
+                &quot;first_name&quot;: &quot;Test&quot;,
+                &quot;last_name&quot;: &quot;Athlete&quot;,
+                &quot;email&quot;: &quot;test.athlete@example.com&quot;,
+                &quot;gender&quot;: &quot;male&quot;,
+                &quot;birthdate&quot;: &quot;2001-01-01T00:00:00.000000Z&quot;,
+                &quot;avatar&quot;: null,
+                &quot;school_id&quot;: 1,
+                &quot;sport_id&quot;: 1,
+                &quot;athlete_number&quot;: &quot;ATH002&quot;,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;created_at&quot;: &quot;2025-09-19T04:04:21.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-19T06:13:22.000000Z&quot;
+            }
+        ],
+        &quot;teams&quot;: [],
+        &quot;users&quot;: [],
+        &quot;venues&quot;: [],
+        &quot;hosted_tournaments&quot;: [],
+        &quot;won_tournaments&quot;: []
+    }
 }</code>
  </pre>
     </span>
@@ -1340,34 +1771,34 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="school_id"                data-endpoint="GETapi-public-schools--school_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the school. Example: <code>17</code></p>
+<p>The ID of the school. Example: <code>1</code></p>
             </div>
                     </form>
 
-                    <h2 id="endpoints-GETapi-public-schools-region--region-">Get schools by region.</h2>
+                    <h2 id="endpoints-GETapi-public-schools-region--regionId-">Get schools by region.</h2>
 
 <p>
 </p>
 
 
 
-<span id="example-requests-GETapi-public-schools-region--region-">
+<span id="example-requests-GETapi-public-schools-region--regionId-">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/public/schools/region/consequatur" \
+    --get "http://localhost:8000/api/public/schools/region/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/public/schools/region/consequatur"
+    "http://localhost:8000/api/public/schools/region/1"
 );
 
 const headers = {
@@ -1382,7 +1813,7 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-GETapi-public-schools-region--region-">
+<span id="example-responses-GETapi-public-schools-region--regionId-">
             <blockquote>
             <p>Example response (200):</p>
         </blockquote>
@@ -1399,47 +1830,258 @@ access-control-allow-credentials: true
 <code class="language-json" style="max-height: 300px;">{
     &quot;success&quot;: true,
     &quot;message&quot;: &quot;Schools retrieved successfully&quot;,
-    &quot;data&quot;: []
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 158,
+            &quot;name&quot;: &quot;Adamson University&quot;,
+            &quot;short_name&quot;: &quot;AdU&quot;,
+            &quot;address&quot;: &quot;900 San Marcelino Street, Ermita, Manila&quot;,
+            &quot;logo&quot;: null,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;created_at&quot;: &quot;2025-09-19T08:47:28.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T08:47:28.000000Z&quot;,
+            &quot;region_id&quot;: 1,
+            &quot;region&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;National Capital Region&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;name&quot;: &quot;Ateneo de Manila University&quot;,
+            &quot;short_name&quot;: &quot;Ateneo&quot;,
+            &quot;address&quot;: &quot;Katipunan Avenue, Quezon City&quot;,
+            &quot;logo&quot;: null,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+            &quot;region_id&quot;: 1,
+            &quot;region&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;National Capital Region&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 80,
+            &quot;name&quot;: &quot;Ateneo de Manila University&quot;,
+            &quot;short_name&quot;: &quot;ADMU&quot;,
+            &quot;address&quot;: &quot;Katipunan Avenue, Loyola Heights, Quezon City&quot;,
+            &quot;logo&quot;: null,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;created_at&quot;: &quot;2025-09-19T04:48:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T04:48:27.000000Z&quot;,
+            &quot;region_id&quot;: 1,
+            &quot;region&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;National Capital Region&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 154,
+            &quot;name&quot;: &quot;Ateneo de Manila University&quot;,
+            &quot;short_name&quot;: &quot;ADMU&quot;,
+            &quot;address&quot;: &quot;Katipunan Avenue, Loyola Heights, Quezon City&quot;,
+            &quot;logo&quot;: null,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;created_at&quot;: &quot;2025-09-19T08:47:28.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T08:47:28.000000Z&quot;,
+            &quot;region_id&quot;: 1,
+            &quot;region&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;National Capital Region&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;name&quot;: &quot;De La Salle University&quot;,
+            &quot;short_name&quot;: &quot;DLSU&quot;,
+            &quot;address&quot;: &quot;2401 Taft Avenue, Manila&quot;,
+            &quot;logo&quot;: null,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+            &quot;region_id&quot;: 1,
+            &quot;region&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;National Capital Region&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 81,
+            &quot;name&quot;: &quot;De La Salle University&quot;,
+            &quot;short_name&quot;: &quot;DLSU&quot;,
+            &quot;address&quot;: &quot;2401 Taft Avenue, Manila&quot;,
+            &quot;logo&quot;: null,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;created_at&quot;: &quot;2025-09-19T04:48:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T04:48:27.000000Z&quot;,
+            &quot;region_id&quot;: 1,
+            &quot;region&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;National Capital Region&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 155,
+            &quot;name&quot;: &quot;De La Salle University&quot;,
+            &quot;short_name&quot;: &quot;DLSU&quot;,
+            &quot;address&quot;: &quot;2401 Taft Avenue, Manila&quot;,
+            &quot;logo&quot;: null,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;created_at&quot;: &quot;2025-09-19T08:47:28.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T08:47:28.000000Z&quot;,
+            &quot;region_id&quot;: 1,
+            &quot;region&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;National Capital Region&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 83,
+            &quot;name&quot;: &quot;Far Eastern University&quot;,
+            &quot;short_name&quot;: &quot;FEU&quot;,
+            &quot;address&quot;: &quot;Nicanor Reyes Street, Sampaloc, Manila&quot;,
+            &quot;logo&quot;: null,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;created_at&quot;: &quot;2025-09-19T04:48:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T04:48:27.000000Z&quot;,
+            &quot;region_id&quot;: 1,
+            &quot;region&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;National Capital Region&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 157,
+            &quot;name&quot;: &quot;Far Eastern University&quot;,
+            &quot;short_name&quot;: &quot;FEU&quot;,
+            &quot;address&quot;: &quot;Nicanor Reyes Street, Sampaloc, Manila&quot;,
+            &quot;logo&quot;: null,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;created_at&quot;: &quot;2025-09-19T08:47:28.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T08:47:28.000000Z&quot;,
+            &quot;region_id&quot;: 1,
+            &quot;region&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;National Capital Region&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 19,
+            &quot;name&quot;: &quot;Polytechnic University of the Philippines&quot;,
+            &quot;short_name&quot;: &quot;PUP&quot;,
+            &quot;address&quot;: &quot;Anonas Street, Sta. Mesa, Manila&quot;,
+            &quot;logo&quot;: null,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+            &quot;region_id&quot;: 1,
+            &quot;region&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;National Capital Region&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 82,
+            &quot;name&quot;: &quot;University of Santo Tomas&quot;,
+            &quot;short_name&quot;: &quot;UST&quot;,
+            &quot;address&quot;: &quot;Espa&ntilde;a Boulevard, Manila&quot;,
+            &quot;logo&quot;: null,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;created_at&quot;: &quot;2025-09-19T04:48:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T04:48:27.000000Z&quot;,
+            &quot;region_id&quot;: 1,
+            &quot;region&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;National Capital Region&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 156,
+            &quot;name&quot;: &quot;University of Santo Tomas&quot;,
+            &quot;short_name&quot;: &quot;UST&quot;,
+            &quot;address&quot;: &quot;Espa&ntilde;a Boulevard, Manila&quot;,
+            &quot;logo&quot;: null,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;created_at&quot;: &quot;2025-09-19T08:47:28.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T08:47:28.000000Z&quot;,
+            &quot;region_id&quot;: 1,
+            &quot;region&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;National Capital Region&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;name&quot;: &quot;University of the Philippines Diliman&quot;,
+            &quot;short_name&quot;: &quot;UP Diliman&quot;,
+            &quot;address&quot;: &quot;University of the Philippines Diliman, Quezon City&quot;,
+            &quot;logo&quot;: null,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+            &quot;region_id&quot;: 1,
+            &quot;region&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;National Capital Region&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 79,
+            &quot;name&quot;: &quot;University of the Philippines Diliman&quot;,
+            &quot;short_name&quot;: &quot;UPD&quot;,
+            &quot;address&quot;: &quot;University of the Philippines Diliman, Quezon City&quot;,
+            &quot;logo&quot;: null,
+            &quot;status&quot;: &quot;active&quot;,
+            &quot;created_at&quot;: &quot;2025-09-19T04:48:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T04:48:27.000000Z&quot;,
+            &quot;region_id&quot;: 1,
+            &quot;region&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;National Capital Region&quot;
+            }
+        }
+    ]
 }</code>
  </pre>
     </span>
-<span id="execution-results-GETapi-public-schools-region--region-" hidden>
+<span id="execution-results-GETapi-public-schools-region--regionId-" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-GETapi-public-schools-region--region-"></span>:
+                id="execution-response-status-GETapi-public-schools-region--regionId-"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-public-schools-region--region-"
+    <pre class="json"><code id="execution-response-content-GETapi-public-schools-region--regionId-"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-GETapi-public-schools-region--region-" hidden>
+<span id="execution-error-GETapi-public-schools-region--regionId-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-public-schools-region--region-">
+    <pre><code id="execution-error-message-GETapi-public-schools-region--regionId-">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-GETapi-public-schools-region--region-" data-method="GET"
-      data-path="api/public/schools/region/{region}"
+<form id="form-GETapi-public-schools-region--regionId-" data-method="GET"
+      data-path="api/public/schools/region/{regionId}"
       data-authed="0"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-public-schools-region--region-', this);">
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-public-schools-region--regionId-', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-public-schools-region--region-"
-                    onclick="tryItOut('GETapi-public-schools-region--region-');">Try it out ⚡
+                    id="btn-tryout-GETapi-public-schools-region--regionId-"
+                    onclick="tryItOut('GETapi-public-schools-region--regionId-');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-public-schools-region--region-"
-                    onclick="cancelTryOut('GETapi-public-schools-region--region-');" hidden>Cancel 🛑
+                    id="btn-canceltryout-GETapi-public-schools-region--regionId-"
+                    onclick="cancelTryOut('GETapi-public-schools-region--regionId-');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-public-schools-region--region-"
+                    id="btn-executetryout-GETapi-public-schools-region--regionId-"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
@@ -1447,7 +2089,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </h3>
             <p>
             <small class="badge badge-green">GET</small>
-            <b><code>api/public/schools/region/{region}</code></b>
+            <b><code>api/public/schools/region/{regionId}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
@@ -1455,7 +2097,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-public-schools-region--region-"
+                              name="Content-Type"                data-endpoint="GETapi-public-schools-region--regionId-"
                value="application/json"
                data-component="header">
     <br>
@@ -1466,7 +2108,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-public-schools-region--region-"
+                              name="Accept"                data-endpoint="GETapi-public-schools-region--regionId-"
                value="application/json"
                data-component="header">
     <br>
@@ -1474,17 +2116,156 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
                     <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>region</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
+                <b style="line-height: 2;"><code>regionId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
  &nbsp;
-                <input type="text" style="display: none"
-                              name="region"                data-endpoint="GETapi-public-schools-region--region-"
-               value="consequatur"
+                <input type="number" style="display: none"
+               step="any"               name="regionId"                data-endpoint="GETapi-public-schools-region--regionId-"
+               value="1"
                data-component="url">
     <br>
-<p>The region. Example: <code>consequatur</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
+
+                    <h2 id="endpoints-GETapi-public-schools-statistics-overall">Get overall system statistics.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-public-schools-statistics-overall">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/public/schools/statistics/overall" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/public/schools/statistics/overall"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-public-schools-statistics-overall">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;success&quot;: true,
+    &quot;message&quot;: &quot;Overall statistics retrieved successfully&quot;,
+    &quot;data&quot;: {
+        &quot;total_schools&quot;: 168,
+        &quot;total_athletes&quot;: 3,
+        &quot;total_sports&quot;: 25,
+        &quot;total_matches&quot;: 0,
+        &quot;upcoming_matches&quot;: 0,
+        &quot;completed_matches&quot;: 0,
+        &quot;total_tournaments&quot;: 13,
+        &quot;active_tournaments&quot;: 0,
+        &quot;years_of_history&quot;: 0,
+        &quot;total_regions&quot;: 15,
+        &quot;total_medal_tallies&quot;: 0
+    }
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-public-schools-statistics-overall" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-public-schools-statistics-overall"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-public-schools-statistics-overall"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-public-schools-statistics-overall" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-public-schools-statistics-overall">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-public-schools-statistics-overall" data-method="GET"
+      data-path="api/public/schools/statistics/overall"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-public-schools-statistics-overall', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-public-schools-statistics-overall"
+                    onclick="tryItOut('GETapi-public-schools-statistics-overall');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-public-schools-statistics-overall"
+                    onclick="cancelTryOut('GETapi-public-schools-statistics-overall');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-public-schools-statistics-overall"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/public/schools/statistics/overall</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-public-schools-statistics-overall"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-public-schools-statistics-overall"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
 
                     <h2 id="endpoints-GETapi-public-sports">Display a listing of the resource.</h2>
 
@@ -1540,11 +2321,676 @@ access-control-allow-credentials: true
     &quot;message&quot;: &quot;Sports retrieved successfully&quot;,
     &quot;data&quot;: {
         &quot;current_page&quot;: 1,
-        &quot;data&quot;: [],
+        &quot;data&quot;: [
+            {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;Basketball&quot;,
+                &quot;description&quot;: &quot;Team basketball played under FIBA-like rules&quot;,
+                &quot;category&quot;: &quot;team_sport&quot;,
+                &quot;age&quot;: &quot;u16-u18&quot;,
+                &quot;gender_category&quot;: &quot;mixed&quot;,
+                &quot;max_players_per_team&quot;: 12,
+                &quot;min_players_per_team&quot;: 5,
+                &quot;scoring_system&quot;: null,
+                &quot;game_duration_minutes&quot;: 40,
+                &quot;tournament_format&quot;: &quot;single_elimination&quot;,
+                &quot;has_ranking_system&quot;: true,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;icon&quot;: &quot;🏀&quot;,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;max_individual_events_per_athlete&quot;: null,
+                &quot;max_relay_events_per_athlete&quot;: null,
+                &quot;max_athletes_per_individual_event&quot;: null,
+                &quot;implements_weights&quot;: null,
+                &quot;hurdle_heights&quot;: null,
+                &quot;starting_heights&quot;: null,
+                &quot;reporting_time_minutes&quot;: null,
+                &quot;min_team_members&quot;: null,
+                &quot;max_team_members&quot;: null,
+                &quot;age_categories&quot;: [
+                    {
+                        &quot;name&quot;: &quot;U12-U15&quot;,
+                        &quot;min_age&quot;: 12,
+                        &quot;max_age&quot;: 15
+                    },
+                    {
+                        &quot;name&quot;: &quot;U16-U18&quot;,
+                        &quot;min_age&quot;: 16,
+                        &quot;max_age&quot;: 18
+                    },
+                    {
+                        &quot;name&quot;: &quot;Senior&quot;,
+                        &quot;min_age&quot;: 19
+                    }
+                ],
+                &quot;sport_events&quot;: [],
+                &quot;venue_requirements&quot;: null
+            },
+            {
+                &quot;id&quot;: 2,
+                &quot;name&quot;: &quot;Football (Soccer)&quot;,
+                &quot;description&quot;: &quot;Team football (soccer) following FIFA rules&quot;,
+                &quot;category&quot;: &quot;team_sport&quot;,
+                &quot;age&quot;: &quot;u16-u18&quot;,
+                &quot;gender_category&quot;: &quot;mixed&quot;,
+                &quot;max_players_per_team&quot;: 22,
+                &quot;min_players_per_team&quot;: 11,
+                &quot;scoring_system&quot;: null,
+                &quot;game_duration_minutes&quot;: 90,
+                &quot;tournament_format&quot;: &quot;single_elimination&quot;,
+                &quot;has_ranking_system&quot;: true,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;icon&quot;: &quot;⚽&quot;,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;max_individual_events_per_athlete&quot;: null,
+                &quot;max_relay_events_per_athlete&quot;: null,
+                &quot;max_athletes_per_individual_event&quot;: null,
+                &quot;implements_weights&quot;: null,
+                &quot;hurdle_heights&quot;: null,
+                &quot;starting_heights&quot;: null,
+                &quot;reporting_time_minutes&quot;: null,
+                &quot;min_team_members&quot;: null,
+                &quot;max_team_members&quot;: null,
+                &quot;age_categories&quot;: [
+                    {
+                        &quot;name&quot;: &quot;U12-U15&quot;,
+                        &quot;min_age&quot;: 12,
+                        &quot;max_age&quot;: 15
+                    },
+                    {
+                        &quot;name&quot;: &quot;U16-U18&quot;,
+                        &quot;min_age&quot;: 16,
+                        &quot;max_age&quot;: 18
+                    },
+                    {
+                        &quot;name&quot;: &quot;Senior&quot;,
+                        &quot;min_age&quot;: 19
+                    }
+                ],
+                &quot;sport_events&quot;: [],
+                &quot;venue_requirements&quot;: null
+            },
+            {
+                &quot;id&quot;: 3,
+                &quot;name&quot;: &quot;Volleyball&quot;,
+                &quot;description&quot;: &quot;Indoor volleyball events&quot;,
+                &quot;category&quot;: &quot;team_sport&quot;,
+                &quot;age&quot;: &quot;u16-u18&quot;,
+                &quot;gender_category&quot;: &quot;mixed&quot;,
+                &quot;max_players_per_team&quot;: 12,
+                &quot;min_players_per_team&quot;: 6,
+                &quot;scoring_system&quot;: null,
+                &quot;game_duration_minutes&quot;: 25,
+                &quot;tournament_format&quot;: &quot;round_robin&quot;,
+                &quot;has_ranking_system&quot;: true,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;icon&quot;: &quot;🏐&quot;,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;max_individual_events_per_athlete&quot;: null,
+                &quot;max_relay_events_per_athlete&quot;: null,
+                &quot;max_athletes_per_individual_event&quot;: null,
+                &quot;implements_weights&quot;: null,
+                &quot;hurdle_heights&quot;: null,
+                &quot;starting_heights&quot;: null,
+                &quot;reporting_time_minutes&quot;: null,
+                &quot;min_team_members&quot;: null,
+                &quot;max_team_members&quot;: null,
+                &quot;age_categories&quot;: [
+                    {
+                        &quot;name&quot;: &quot;U12-U15&quot;,
+                        &quot;min_age&quot;: 12,
+                        &quot;max_age&quot;: 15
+                    },
+                    {
+                        &quot;name&quot;: &quot;U16-U18&quot;,
+                        &quot;min_age&quot;: 16,
+                        &quot;max_age&quot;: 18
+                    },
+                    {
+                        &quot;name&quot;: &quot;Senior&quot;,
+                        &quot;min_age&quot;: 19
+                    }
+                ],
+                &quot;sport_events&quot;: [],
+                &quot;venue_requirements&quot;: null
+            },
+            {
+                &quot;id&quot;: 4,
+                &quot;name&quot;: &quot;Handball&quot;,
+                &quot;description&quot;: &quot;Team handball competitions&quot;,
+                &quot;category&quot;: &quot;team_sport&quot;,
+                &quot;age&quot;: &quot;u16-u18&quot;,
+                &quot;gender_category&quot;: &quot;mixed&quot;,
+                &quot;max_players_per_team&quot;: 16,
+                &quot;min_players_per_team&quot;: 7,
+                &quot;scoring_system&quot;: null,
+                &quot;game_duration_minutes&quot;: 30,
+                &quot;tournament_format&quot;: &quot;single_elimination&quot;,
+                &quot;has_ranking_system&quot;: true,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;icon&quot;: &quot;🤾&quot;,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;max_individual_events_per_athlete&quot;: null,
+                &quot;max_relay_events_per_athlete&quot;: null,
+                &quot;max_athletes_per_individual_event&quot;: null,
+                &quot;implements_weights&quot;: null,
+                &quot;hurdle_heights&quot;: null,
+                &quot;starting_heights&quot;: null,
+                &quot;reporting_time_minutes&quot;: null,
+                &quot;min_team_members&quot;: null,
+                &quot;max_team_members&quot;: null,
+                &quot;age_categories&quot;: [
+                    {
+                        &quot;name&quot;: &quot;U12-U15&quot;,
+                        &quot;min_age&quot;: 12,
+                        &quot;max_age&quot;: 15
+                    },
+                    {
+                        &quot;name&quot;: &quot;U16-U18&quot;,
+                        &quot;min_age&quot;: 16,
+                        &quot;max_age&quot;: 18
+                    },
+                    {
+                        &quot;name&quot;: &quot;Senior&quot;,
+                        &quot;min_age&quot;: 19
+                    }
+                ],
+                &quot;sport_events&quot;: [],
+                &quot;venue_requirements&quot;: null
+            },
+            {
+                &quot;id&quot;: 5,
+                &quot;name&quot;: &quot;Athletics (Track and Field)&quot;,
+                &quot;description&quot;: &quot;Track and field events: running, jumping and throwing&quot;,
+                &quot;category&quot;: &quot;track_field&quot;,
+                &quot;age&quot;: &quot;u16-u18&quot;,
+                &quot;gender_category&quot;: &quot;mixed&quot;,
+                &quot;max_players_per_team&quot;: null,
+                &quot;min_players_per_team&quot;: null,
+                &quot;scoring_system&quot;: null,
+                &quot;game_duration_minutes&quot;: null,
+                &quot;tournament_format&quot;: &quot;single_elimination&quot;,
+                &quot;has_ranking_system&quot;: true,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;icon&quot;: &quot;🏃&quot;,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;max_individual_events_per_athlete&quot;: null,
+                &quot;max_relay_events_per_athlete&quot;: null,
+                &quot;max_athletes_per_individual_event&quot;: null,
+                &quot;implements_weights&quot;: null,
+                &quot;hurdle_heights&quot;: null,
+                &quot;starting_heights&quot;: null,
+                &quot;reporting_time_minutes&quot;: null,
+                &quot;min_team_members&quot;: null,
+                &quot;max_team_members&quot;: null,
+                &quot;age_categories&quot;: [
+                    {
+                        &quot;name&quot;: &quot;U12-U15&quot;,
+                        &quot;min_age&quot;: 12,
+                        &quot;max_age&quot;: 15
+                    },
+                    {
+                        &quot;name&quot;: &quot;U16-U18&quot;,
+                        &quot;min_age&quot;: 16,
+                        &quot;max_age&quot;: 18
+                    },
+                    {
+                        &quot;name&quot;: &quot;Senior&quot;,
+                        &quot;min_age&quot;: 19
+                    }
+                ],
+                &quot;sport_events&quot;: [],
+                &quot;venue_requirements&quot;: null
+            },
+            {
+                &quot;id&quot;: 6,
+                &quot;name&quot;: &quot;Swimming&quot;,
+                &quot;description&quot;: &quot;Competitive swimming (individual and relays) following FINA rules&quot;,
+                &quot;category&quot;: &quot;aquatics&quot;,
+                &quot;age&quot;: &quot;u16-u18&quot;,
+                &quot;gender_category&quot;: &quot;mixed&quot;,
+                &quot;max_players_per_team&quot;: null,
+                &quot;min_players_per_team&quot;: null,
+                &quot;scoring_system&quot;: null,
+                &quot;game_duration_minutes&quot;: null,
+                &quot;tournament_format&quot;: &quot;single_elimination&quot;,
+                &quot;has_ranking_system&quot;: true,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;icon&quot;: &quot;🏊&quot;,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;max_individual_events_per_athlete&quot;: null,
+                &quot;max_relay_events_per_athlete&quot;: null,
+                &quot;max_athletes_per_individual_event&quot;: null,
+                &quot;implements_weights&quot;: null,
+                &quot;hurdle_heights&quot;: null,
+                &quot;starting_heights&quot;: null,
+                &quot;reporting_time_minutes&quot;: null,
+                &quot;min_team_members&quot;: null,
+                &quot;max_team_members&quot;: null,
+                &quot;age_categories&quot;: [
+                    {
+                        &quot;name&quot;: &quot;U12-U15&quot;,
+                        &quot;min_age&quot;: 12,
+                        &quot;max_age&quot;: 15
+                    },
+                    {
+                        &quot;name&quot;: &quot;U16-U18&quot;,
+                        &quot;min_age&quot;: 16,
+                        &quot;max_age&quot;: 18
+                    },
+                    {
+                        &quot;name&quot;: &quot;Senior&quot;,
+                        &quot;min_age&quot;: 19
+                    }
+                ],
+                &quot;sport_events&quot;: [],
+                &quot;venue_requirements&quot;: null
+            },
+            {
+                &quot;id&quot;: 7,
+                &quot;name&quot;: &quot;Table Tennis&quot;,
+                &quot;description&quot;: &quot;Table tennis singles, doubles and team events&quot;,
+                &quot;category&quot;: &quot;racket_sports&quot;,
+                &quot;age&quot;: &quot;u16-u18&quot;,
+                &quot;gender_category&quot;: &quot;mixed&quot;,
+                &quot;max_players_per_team&quot;: null,
+                &quot;min_players_per_team&quot;: null,
+                &quot;scoring_system&quot;: null,
+                &quot;game_duration_minutes&quot;: null,
+                &quot;tournament_format&quot;: &quot;single_elimination&quot;,
+                &quot;has_ranking_system&quot;: true,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;icon&quot;: &quot;🏓&quot;,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;max_individual_events_per_athlete&quot;: null,
+                &quot;max_relay_events_per_athlete&quot;: null,
+                &quot;max_athletes_per_individual_event&quot;: null,
+                &quot;implements_weights&quot;: null,
+                &quot;hurdle_heights&quot;: null,
+                &quot;starting_heights&quot;: null,
+                &quot;reporting_time_minutes&quot;: null,
+                &quot;min_team_members&quot;: null,
+                &quot;max_team_members&quot;: null,
+                &quot;age_categories&quot;: [
+                    {
+                        &quot;name&quot;: &quot;U12-U15&quot;,
+                        &quot;min_age&quot;: 12,
+                        &quot;max_age&quot;: 15
+                    },
+                    {
+                        &quot;name&quot;: &quot;U16-U18&quot;,
+                        &quot;min_age&quot;: 16,
+                        &quot;max_age&quot;: 18
+                    },
+                    {
+                        &quot;name&quot;: &quot;Senior&quot;,
+                        &quot;min_age&quot;: 19
+                    }
+                ],
+                &quot;sport_events&quot;: [],
+                &quot;venue_requirements&quot;: null
+            },
+            {
+                &quot;id&quot;: 8,
+                &quot;name&quot;: &quot;Badminton&quot;,
+                &quot;description&quot;: &quot;Singles and doubles badminton events following BWF rules&quot;,
+                &quot;category&quot;: &quot;racket_sports&quot;,
+                &quot;age&quot;: &quot;u16-u18&quot;,
+                &quot;gender_category&quot;: &quot;mixed&quot;,
+                &quot;max_players_per_team&quot;: null,
+                &quot;min_players_per_team&quot;: null,
+                &quot;scoring_system&quot;: null,
+                &quot;game_duration_minutes&quot;: null,
+                &quot;tournament_format&quot;: &quot;single_elimination&quot;,
+                &quot;has_ranking_system&quot;: true,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;icon&quot;: &quot;🏸&quot;,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;max_individual_events_per_athlete&quot;: null,
+                &quot;max_relay_events_per_athlete&quot;: null,
+                &quot;max_athletes_per_individual_event&quot;: null,
+                &quot;implements_weights&quot;: null,
+                &quot;hurdle_heights&quot;: null,
+                &quot;starting_heights&quot;: null,
+                &quot;reporting_time_minutes&quot;: null,
+                &quot;min_team_members&quot;: null,
+                &quot;max_team_members&quot;: null,
+                &quot;age_categories&quot;: [
+                    {
+                        &quot;name&quot;: &quot;U12-U15&quot;,
+                        &quot;min_age&quot;: 12,
+                        &quot;max_age&quot;: 15
+                    },
+                    {
+                        &quot;name&quot;: &quot;U16-U18&quot;,
+                        &quot;min_age&quot;: 16,
+                        &quot;max_age&quot;: 18
+                    },
+                    {
+                        &quot;name&quot;: &quot;Senior&quot;,
+                        &quot;min_age&quot;: 19
+                    }
+                ],
+                &quot;sport_events&quot;: [],
+                &quot;venue_requirements&quot;: null
+            },
+            {
+                &quot;id&quot;: 9,
+                &quot;name&quot;: &quot;Karate&quot;,
+                &quot;description&quot;: &quot;Karate (kumite and kata) &mdash; includes Karate-do entries merged here&quot;,
+                &quot;category&quot;: &quot;martial_arts&quot;,
+                &quot;age&quot;: &quot;u16-u18&quot;,
+                &quot;gender_category&quot;: &quot;mixed&quot;,
+                &quot;max_players_per_team&quot;: null,
+                &quot;min_players_per_team&quot;: null,
+                &quot;scoring_system&quot;: null,
+                &quot;game_duration_minutes&quot;: null,
+                &quot;tournament_format&quot;: &quot;single_elimination&quot;,
+                &quot;has_ranking_system&quot;: true,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;icon&quot;: &quot;🥋&quot;,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;max_individual_events_per_athlete&quot;: null,
+                &quot;max_relay_events_per_athlete&quot;: null,
+                &quot;max_athletes_per_individual_event&quot;: null,
+                &quot;implements_weights&quot;: null,
+                &quot;hurdle_heights&quot;: null,
+                &quot;starting_heights&quot;: null,
+                &quot;reporting_time_minutes&quot;: null,
+                &quot;min_team_members&quot;: null,
+                &quot;max_team_members&quot;: null,
+                &quot;age_categories&quot;: [
+                    {
+                        &quot;name&quot;: &quot;U12-U15&quot;,
+                        &quot;min_age&quot;: 12,
+                        &quot;max_age&quot;: 15
+                    },
+                    {
+                        &quot;name&quot;: &quot;U16-U18&quot;,
+                        &quot;min_age&quot;: 16,
+                        &quot;max_age&quot;: 18
+                    },
+                    {
+                        &quot;name&quot;: &quot;Senior&quot;,
+                        &quot;min_age&quot;: 19
+                    }
+                ],
+                &quot;sport_events&quot;: [],
+                &quot;venue_requirements&quot;: null
+            },
+            {
+                &quot;id&quot;: 10,
+                &quot;name&quot;: &quot;Taekwondo&quot;,
+                &quot;description&quot;: &quot;Taekwondo kyorugi and poomsae competitions&quot;,
+                &quot;category&quot;: &quot;martial_arts&quot;,
+                &quot;age&quot;: &quot;u16-u18&quot;,
+                &quot;gender_category&quot;: &quot;mixed&quot;,
+                &quot;max_players_per_team&quot;: null,
+                &quot;min_players_per_team&quot;: null,
+                &quot;scoring_system&quot;: null,
+                &quot;game_duration_minutes&quot;: null,
+                &quot;tournament_format&quot;: &quot;single_elimination&quot;,
+                &quot;has_ranking_system&quot;: true,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;icon&quot;: &quot;🥋&quot;,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;max_individual_events_per_athlete&quot;: null,
+                &quot;max_relay_events_per_athlete&quot;: null,
+                &quot;max_athletes_per_individual_event&quot;: null,
+                &quot;implements_weights&quot;: null,
+                &quot;hurdle_heights&quot;: null,
+                &quot;starting_heights&quot;: null,
+                &quot;reporting_time_minutes&quot;: null,
+                &quot;min_team_members&quot;: null,
+                &quot;max_team_members&quot;: null,
+                &quot;age_categories&quot;: [
+                    {
+                        &quot;name&quot;: &quot;U12-U15&quot;,
+                        &quot;min_age&quot;: 12,
+                        &quot;max_age&quot;: 15
+                    },
+                    {
+                        &quot;name&quot;: &quot;U16-U18&quot;,
+                        &quot;min_age&quot;: 16,
+                        &quot;max_age&quot;: 18
+                    },
+                    {
+                        &quot;name&quot;: &quot;Senior&quot;,
+                        &quot;min_age&quot;: 19
+                    }
+                ],
+                &quot;sport_events&quot;: [],
+                &quot;venue_requirements&quot;: null
+            },
+            {
+                &quot;id&quot;: 11,
+                &quot;name&quot;: &quot;Artistic Gymnastics&quot;,
+                &quot;description&quot;: &quot;Artistic Gymnastics (men&#039;s &amp; women&#039;s disciplines)&quot;,
+                &quot;category&quot;: &quot;gymnastics&quot;,
+                &quot;age&quot;: &quot;u16-u18&quot;,
+                &quot;gender_category&quot;: &quot;mixed&quot;,
+                &quot;max_players_per_team&quot;: null,
+                &quot;min_players_per_team&quot;: null,
+                &quot;scoring_system&quot;: null,
+                &quot;game_duration_minutes&quot;: null,
+                &quot;tournament_format&quot;: &quot;single_elimination&quot;,
+                &quot;has_ranking_system&quot;: true,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;icon&quot;: &quot;🤸&quot;,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-21T02:58:28.000000Z&quot;,
+                &quot;max_individual_events_per_athlete&quot;: null,
+                &quot;max_relay_events_per_athlete&quot;: null,
+                &quot;max_athletes_per_individual_event&quot;: null,
+                &quot;implements_weights&quot;: null,
+                &quot;hurdle_heights&quot;: null,
+                &quot;starting_heights&quot;: null,
+                &quot;reporting_time_minutes&quot;: null,
+                &quot;min_team_members&quot;: null,
+                &quot;max_team_members&quot;: null,
+                &quot;age_categories&quot;: [
+                    {
+                        &quot;name&quot;: &quot;Junior&quot;,
+                        &quot;min_age&quot;: 12,
+                        &quot;max_age&quot;: 18
+                    },
+                    {
+                        &quot;name&quot;: &quot;Senior&quot;,
+                        &quot;min_age&quot;: 19
+                    }
+                ],
+                &quot;sport_events&quot;: [],
+                &quot;venue_requirements&quot;: null
+            },
+            {
+                &quot;id&quot;: 36,
+                &quot;name&quot;: &quot;Archery&quot;,
+                &quot;description&quot;: &quot;Target archery events (various distances) following World Archery rules&quot;,
+                &quot;category&quot;: &quot;other&quot;,
+                &quot;age&quot;: &quot;u12-u15&quot;,
+                &quot;gender_category&quot;: &quot;mixed&quot;,
+                &quot;max_players_per_team&quot;: null,
+                &quot;min_players_per_team&quot;: null,
+                &quot;scoring_system&quot;: null,
+                &quot;game_duration_minutes&quot;: null,
+                &quot;tournament_format&quot;: &quot;single_elimination&quot;,
+                &quot;has_ranking_system&quot;: true,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;icon&quot;: &quot;🏹&quot;,
+                &quot;created_at&quot;: &quot;2025-09-19T10:13:59.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;max_individual_events_per_athlete&quot;: null,
+                &quot;max_relay_events_per_athlete&quot;: null,
+                &quot;max_athletes_per_individual_event&quot;: null,
+                &quot;implements_weights&quot;: null,
+                &quot;hurdle_heights&quot;: null,
+                &quot;starting_heights&quot;: null,
+                &quot;reporting_time_minutes&quot;: null,
+                &quot;min_team_members&quot;: null,
+                &quot;max_team_members&quot;: null,
+                &quot;age_categories&quot;: [
+                    {
+                        &quot;name&quot;: &quot;U12-U15&quot;,
+                        &quot;min_age&quot;: 12,
+                        &quot;max_age&quot;: 15
+                    },
+                    {
+                        &quot;name&quot;: &quot;U16-U18&quot;,
+                        &quot;min_age&quot;: 16,
+                        &quot;max_age&quot;: 18
+                    },
+                    {
+                        &quot;name&quot;: &quot;Senior&quot;,
+                        &quot;min_age&quot;: 19
+                    }
+                ],
+                &quot;sport_events&quot;: [],
+                &quot;venue_requirements&quot;: null
+            },
+            {
+                &quot;id&quot;: 60,
+                &quot;name&quot;: &quot;Baseball&quot;,
+                &quot;description&quot;: &quot;Team baseball following standard baseball rules&quot;,
+                &quot;category&quot;: &quot;team_sport&quot;,
+                &quot;age&quot;: &quot;u16-u18&quot;,
+                &quot;gender_category&quot;: &quot;mixed&quot;,
+                &quot;max_players_per_team&quot;: null,
+                &quot;min_players_per_team&quot;: null,
+                &quot;scoring_system&quot;: null,
+                &quot;game_duration_minutes&quot;: null,
+                &quot;tournament_format&quot;: &quot;single_elimination&quot;,
+                &quot;has_ranking_system&quot;: true,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;icon&quot;: &quot;⚾&quot;,
+                &quot;created_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;max_individual_events_per_athlete&quot;: null,
+                &quot;max_relay_events_per_athlete&quot;: null,
+                &quot;max_athletes_per_individual_event&quot;: null,
+                &quot;implements_weights&quot;: null,
+                &quot;hurdle_heights&quot;: null,
+                &quot;starting_heights&quot;: null,
+                &quot;reporting_time_minutes&quot;: null,
+                &quot;min_team_members&quot;: null,
+                &quot;max_team_members&quot;: null,
+                &quot;age_categories&quot;: [
+                    {
+                        &quot;name&quot;: &quot;U12-U15&quot;,
+                        &quot;min_age&quot;: 12,
+                        &quot;max_age&quot;: 15
+                    },
+                    {
+                        &quot;name&quot;: &quot;U16-U18&quot;,
+                        &quot;min_age&quot;: 16,
+                        &quot;max_age&quot;: 18
+                    },
+                    {
+                        &quot;name&quot;: &quot;Senior&quot;,
+                        &quot;min_age&quot;: 19
+                    }
+                ],
+                &quot;sport_events&quot;: [],
+                &quot;venue_requirements&quot;: null
+            },
+            {
+                &quot;id&quot;: 61,
+                &quot;name&quot;: &quot;Beach Volleyball&quot;,
+                &quot;description&quot;: &quot;Beach volleyball played on sand (pairs or 3-player formats)&quot;,
+                &quot;category&quot;: &quot;team_sport&quot;,
+                &quot;age&quot;: &quot;u16-u18&quot;,
+                &quot;gender_category&quot;: &quot;mixed&quot;,
+                &quot;max_players_per_team&quot;: null,
+                &quot;min_players_per_team&quot;: null,
+                &quot;scoring_system&quot;: null,
+                &quot;game_duration_minutes&quot;: null,
+                &quot;tournament_format&quot;: &quot;single_elimination&quot;,
+                &quot;has_ranking_system&quot;: true,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;icon&quot;: &quot;🏐&quot;,
+                &quot;created_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;max_individual_events_per_athlete&quot;: null,
+                &quot;max_relay_events_per_athlete&quot;: null,
+                &quot;max_athletes_per_individual_event&quot;: null,
+                &quot;implements_weights&quot;: null,
+                &quot;hurdle_heights&quot;: null,
+                &quot;starting_heights&quot;: null,
+                &quot;reporting_time_minutes&quot;: null,
+                &quot;min_team_members&quot;: null,
+                &quot;max_team_members&quot;: null,
+                &quot;age_categories&quot;: [
+                    {
+                        &quot;name&quot;: &quot;U12-U15&quot;,
+                        &quot;min_age&quot;: 12,
+                        &quot;max_age&quot;: 15
+                    },
+                    {
+                        &quot;name&quot;: &quot;U16-U18&quot;,
+                        &quot;min_age&quot;: 16,
+                        &quot;max_age&quot;: 18
+                    },
+                    {
+                        &quot;name&quot;: &quot;Senior&quot;,
+                        &quot;min_age&quot;: 19
+                    }
+                ],
+                &quot;sport_events&quot;: [],
+                &quot;venue_requirements&quot;: null
+            },
+            {
+                &quot;id&quot;: 62,
+                &quot;name&quot;: &quot;Boxing&quot;,
+                &quot;description&quot;: &quot;Amateur boxing across weight classes&quot;,
+                &quot;category&quot;: &quot;combat_sport&quot;,
+                &quot;age&quot;: &quot;u16-u18&quot;,
+                &quot;gender_category&quot;: &quot;mixed&quot;,
+                &quot;max_players_per_team&quot;: null,
+                &quot;min_players_per_team&quot;: null,
+                &quot;scoring_system&quot;: null,
+                &quot;game_duration_minutes&quot;: null,
+                &quot;tournament_format&quot;: &quot;single_elimination&quot;,
+                &quot;has_ranking_system&quot;: true,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;icon&quot;: &quot;🥊&quot;,
+                &quot;created_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+                &quot;max_individual_events_per_athlete&quot;: null,
+                &quot;max_relay_events_per_athlete&quot;: null,
+                &quot;max_athletes_per_individual_event&quot;: null,
+                &quot;implements_weights&quot;: null,
+                &quot;hurdle_heights&quot;: null,
+                &quot;starting_heights&quot;: null,
+                &quot;reporting_time_minutes&quot;: null,
+                &quot;min_team_members&quot;: null,
+                &quot;max_team_members&quot;: null,
+                &quot;age_categories&quot;: [
+                    {
+                        &quot;name&quot;: &quot;Youth&quot;,
+                        &quot;max_age&quot;: 18
+                    },
+                    {
+                        &quot;name&quot;: &quot;Senior&quot;,
+                        &quot;min_age&quot;: 19
+                    }
+                ],
+                &quot;sport_events&quot;: [],
+                &quot;venue_requirements&quot;: null
+            }
+        ],
         &quot;first_page_url&quot;: &quot;http://localhost:8000/api/public/sports?page=1&quot;,
-        &quot;from&quot;: null,
-        &quot;last_page&quot;: 1,
-        &quot;last_page_url&quot;: &quot;http://localhost:8000/api/public/sports?page=1&quot;,
+        &quot;from&quot;: 1,
+        &quot;last_page&quot;: 2,
+        &quot;last_page_url&quot;: &quot;http://localhost:8000/api/public/sports?page=2&quot;,
         &quot;links&quot;: [
             {
                 &quot;url&quot;: null,
@@ -1559,18 +3005,24 @@ access-control-allow-credentials: true
                 &quot;active&quot;: true
             },
             {
-                &quot;url&quot;: null,
+                &quot;url&quot;: &quot;http://localhost:8000/api/public/sports?page=2&quot;,
+                &quot;label&quot;: &quot;2&quot;,
+                &quot;page&quot;: 2,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/public/sports?page=2&quot;,
                 &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
-                &quot;page&quot;: null,
+                &quot;page&quot;: 2,
                 &quot;active&quot;: false
             }
         ],
-        &quot;next_page_url&quot;: null,
+        &quot;next_page_url&quot;: &quot;http://localhost:8000/api/public/sports?page=2&quot;,
         &quot;path&quot;: &quot;http://localhost:8000/api/public/sports&quot;,
         &quot;per_page&quot;: 15,
         &quot;prev_page_url&quot;: null,
-        &quot;to&quot;: null,
-        &quot;total&quot;: 0
+        &quot;to&quot;: 15,
+        &quot;total&quot;: 25
     }
 }</code>
  </pre>
@@ -1659,14 +3111,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/public/sports/17" \
+    --get "http://localhost:8000/api/public/sports/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/public/sports/17"
+    "http://localhost:8000/api/public/sports/1"
 );
 
 const headers = {
@@ -1683,7 +3135,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-public-sports--sport_id-">
             <blockquote>
-            <p>Example response (404):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -1696,7 +3148,73 @@ access-control-allow-credentials: true
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;No query results for model [App\\Models\\Sport] 17&quot;
+    &quot;success&quot;: true,
+    &quot;message&quot;: &quot;Sport retrieved successfully&quot;,
+    &quot;data&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Basketball&quot;,
+        &quot;description&quot;: &quot;Team basketball played under FIBA-like rules&quot;,
+        &quot;category&quot;: &quot;team_sport&quot;,
+        &quot;age&quot;: &quot;u16-u18&quot;,
+        &quot;gender_category&quot;: &quot;mixed&quot;,
+        &quot;max_players_per_team&quot;: 12,
+        &quot;min_players_per_team&quot;: 5,
+        &quot;scoring_system&quot;: null,
+        &quot;game_duration_minutes&quot;: 40,
+        &quot;tournament_format&quot;: &quot;single_elimination&quot;,
+        &quot;has_ranking_system&quot;: true,
+        &quot;status&quot;: &quot;active&quot;,
+        &quot;icon&quot;: &quot;🏀&quot;,
+        &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-09-21T02:28:26.000000Z&quot;,
+        &quot;max_individual_events_per_athlete&quot;: null,
+        &quot;max_relay_events_per_athlete&quot;: null,
+        &quot;max_athletes_per_individual_event&quot;: null,
+        &quot;implements_weights&quot;: null,
+        &quot;hurdle_heights&quot;: null,
+        &quot;starting_heights&quot;: null,
+        &quot;reporting_time_minutes&quot;: null,
+        &quot;min_team_members&quot;: null,
+        &quot;max_team_members&quot;: null,
+        &quot;age_categories&quot;: [
+            {
+                &quot;name&quot;: &quot;U12-U15&quot;,
+                &quot;min_age&quot;: 12,
+                &quot;max_age&quot;: 15
+            },
+            {
+                &quot;name&quot;: &quot;U16-U18&quot;,
+                &quot;min_age&quot;: 16,
+                &quot;max_age&quot;: 18
+            },
+            {
+                &quot;name&quot;: &quot;Senior&quot;,
+                &quot;min_age&quot;: 19
+            }
+        ],
+        &quot;sport_events&quot;: [],
+        &quot;venue_requirements&quot;: null,
+        &quot;athletes&quot;: [
+            {
+                &quot;id&quot;: 2,
+                &quot;first_name&quot;: &quot;Test&quot;,
+                &quot;last_name&quot;: &quot;Athlete&quot;,
+                &quot;email&quot;: &quot;test.athlete@example.com&quot;,
+                &quot;gender&quot;: &quot;male&quot;,
+                &quot;birthdate&quot;: &quot;2001-01-01T00:00:00.000000Z&quot;,
+                &quot;avatar&quot;: null,
+                &quot;school_id&quot;: 1,
+                &quot;sport_id&quot;: 1,
+                &quot;athlete_number&quot;: &quot;ATH002&quot;,
+                &quot;status&quot;: &quot;active&quot;,
+                &quot;created_at&quot;: &quot;2025-09-19T04:04:21.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-19T06:13:22.000000Z&quot;
+            }
+        ],
+        &quot;teams&quot;: [],
+        &quot;schedules&quot;: [],
+        &quot;game_matches&quot;: []
+    }
 }</code>
  </pre>
     </span>
@@ -1776,10 +3294,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sport_id"                data-endpoint="GETapi-public-sports--sport_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the sport. Example: <code>17</code></p>
+<p>The ID of the sport. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -2820,7 +4338,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-public-results-recent">
             <blockquote>
-            <p>Example response (500):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -2833,9 +4351,9 @@ access-control-allow-credentials: true
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;success&quot;: false,
-    &quot;message&quot;: &quot;Failed to retrieve recent results&quot;,
-    &quot;error&quot;: &quot;Call to undefined method App\\Models\\Result::gameMatch()&quot;
+    &quot;success&quot;: true,
+    &quot;message&quot;: &quot;Recent results retrieved successfully&quot;,
+    &quot;data&quot;: []
 }</code>
  </pre>
     </span>
@@ -3083,14 +4601,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/public/rankings/sport/17/teams" \
+    --get "http://localhost:8000/api/public/rankings/sport/1/teams" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/public/rankings/sport/17/teams"
+    "http://localhost:8000/api/public/rankings/sport/1/teams"
 );
 
 const headers = {
@@ -3122,7 +4640,9 @@ access-control-allow-credentials: true
 <code class="language-json" style="max-height: 300px;">{
     &quot;success&quot;: false,
     &quot;message&quot;: &quot;Failed to retrieve team rankings&quot;,
-    &quot;error&quot;: &quot;SQLSTATE[42S22]: Column not found: 1054 Unknown column &#039;season_year&#039; in &#039;where clause&#039; (Connection: mysql, SQL: select * from `rankings` where `sport_id` = 17 and `ranking_type` = team and `season_year` = 2025 order by `rank` asc)&quot;
+    &quot;errors&quot;: [
+        &quot;SQLSTATE[42S22]: Column not found: 1054 Unknown column &#039;season_year&#039; in &#039;where clause&#039; (Connection: mysql, SQL: select * from `rankings` where `sport_id` = 1 and `ranking_type` = team and `season_year` = 2025 order by `rank` asc)&quot;
+    ]
 }</code>
  </pre>
     </span>
@@ -3202,10 +4722,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sportId"                data-endpoint="GETapi-public-rankings-sport--sportId--teams"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -3222,14 +4742,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/public/rankings/sport/17/individuals" \
+    --get "http://localhost:8000/api/public/rankings/sport/1/individuals" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/public/rankings/sport/17/individuals"
+    "http://localhost:8000/api/public/rankings/sport/1/individuals"
 );
 
 const headers = {
@@ -3261,7 +4781,9 @@ access-control-allow-credentials: true
 <code class="language-json" style="max-height: 300px;">{
     &quot;success&quot;: false,
     &quot;message&quot;: &quot;Failed to retrieve individual rankings&quot;,
-    &quot;error&quot;: &quot;SQLSTATE[42S22]: Column not found: 1054 Unknown column &#039;season_year&#039; in &#039;where clause&#039; (Connection: mysql, SQL: select * from `rankings` where `sport_id` = 17 and `ranking_type` = individual and `season_year` = 2025 order by `rank` asc)&quot;
+    &quot;errors&quot;: [
+        &quot;SQLSTATE[42S22]: Column not found: 1054 Unknown column &#039;season_year&#039; in &#039;where clause&#039; (Connection: mysql, SQL: select * from `rankings` where `sport_id` = 1 and `ranking_type` = individual and `season_year` = 2025 order by `rank` asc)&quot;
+    ]
 }</code>
  </pre>
     </span>
@@ -3341,10 +4863,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sportId"                data-endpoint="GETapi-public-rankings-sport--sportId--individuals"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -3400,7 +4922,9 @@ access-control-allow-credentials: true
 <code class="language-json" style="max-height: 300px;">{
     &quot;success&quot;: false,
     &quot;message&quot;: &quot;Failed to retrieve top performers&quot;,
-    &quot;error&quot;: &quot;SQLSTATE[42S22]: Column not found: 1054 Unknown column &#039;season_year&#039; in &#039;where clause&#039; (Connection: mysql, SQL: select * from `rankings` where `season_year` = 2025 and `rank` &lt;= 10 order by `sport_id` asc, `ranking_type` asc, `rank` asc)&quot;
+    &quot;errors&quot;: [
+        &quot;SQLSTATE[42S22]: Column not found: 1054 Unknown column &#039;season_year&#039; in &#039;where clause&#039; (Connection: mysql, SQL: select * from `rankings` where `season_year` = 2025 and `rank` &lt;= 10 order by `sport_id` asc, `ranking_type` asc, `rank` asc)&quot;
+    ]
 }</code>
  </pre>
     </span>
@@ -3687,7 +5211,9 @@ access-control-allow-credentials: true
 <code class="language-json" style="max-height: 300px;">{
     &quot;success&quot;: false,
     &quot;message&quot;: &quot;Failed to retrieve overall medal statistics&quot;,
-    &quot;error&quot;: &quot;SQLSTATE[42S22]: Column not found: 1054 Unknown column &#039;event_year&#039; in &#039;where clause&#039; (Connection: mysql, SQL: select count(*) as aggregate from `medal_tallies` where `event_year` = 2025 and `medal_type` = gold)&quot;
+    &quot;errors&quot;: [
+        &quot;SQLSTATE[42S22]: Column not found: 1054 Unknown column &#039;event_year&#039; in &#039;where clause&#039; (Connection: mysql, SQL: select count(*) as aggregate from `medal_tallies` where `event_year` = 2025 and `medal_type` = gold)&quot;
+    ]
 }</code>
  </pre>
     </span>
@@ -3814,7 +5340,9 @@ access-control-allow-credentials: true
 <code class="language-json" style="max-height: 300px;">{
     &quot;success&quot;: false,
     &quot;message&quot;: &quot;Failed to retrieve school medal ranking&quot;,
-    &quot;error&quot;: &quot;SQLSTATE[42S22]: Column not found: 1054 Unknown column &#039;school_id&#039; in &#039;field list&#039; (Connection: mysql, SQL: select \n                    school_id,\n                    SUM(CASE WHEN medal_type = \&quot;gold\&quot; THEN 1 ELSE 0 END) as gold_count,\n                    SUM(CASE WHEN medal_type = \&quot;silver\&quot; THEN 1 ELSE 0 END) as silver_count,\n                    SUM(CASE WHEN medal_type = \&quot;bronze\&quot; THEN 1 ELSE 0 END) as bronze_count,\n                    COUNT(*) as total_medals,\n                    (SUM(CASE WHEN medal_type = \&quot;gold\&quot; THEN 3 ELSE 0 END) +\n                     SUM(CASE WHEN medal_type = \&quot;silver\&quot; THEN 2 ELSE 0 END) +\n                     SUM(CASE WHEN medal_type = \&quot;bronze\&quot; THEN 1 ELSE 0 END)) as total_points\n                 from `medal_tallies` where `event_year` = 2025 group by `school_id` order by `total_points` desc, `gold_count` desc, `silver_count` desc, `bronze_count` desc)&quot;
+    &quot;errors&quot;: [
+        &quot;SQLSTATE[42S22]: Column not found: 1054 Unknown column &#039;school_id&#039; in &#039;field list&#039; (Connection: mysql, SQL: select \n                    school_id,\n                    SUM(CASE WHEN medal_type = \&quot;gold\&quot; THEN 1 ELSE 0 END) as gold_count,\n                    SUM(CASE WHEN medal_type = \&quot;silver\&quot; THEN 1 ELSE 0 END) as silver_count,\n                    SUM(CASE WHEN medal_type = \&quot;bronze\&quot; THEN 1 ELSE 0 END) as bronze_count,\n                    COUNT(*) as total_medals,\n                    (SUM(CASE WHEN medal_type = \&quot;gold\&quot; THEN 3 ELSE 0 END) +\n                     SUM(CASE WHEN medal_type = \&quot;silver\&quot; THEN 2 ELSE 0 END) +\n                     SUM(CASE WHEN medal_type = \&quot;bronze\&quot; THEN 1 ELSE 0 END)) as total_points\n                 from `medal_tallies` where `event_year` = 2025 group by `school_id` order by `total_points` desc, `gold_count` desc, `silver_count` desc, `bronze_count` desc)&quot;
+    ]
 }</code>
  </pre>
     </span>
@@ -3943,9 +5471,362 @@ access-control-allow-credentials: true
     &quot;message&quot;: &quot;Tournaments retrieved successfully&quot;,
     &quot;data&quot;: {
         &quot;current_page&quot;: 1,
-        &quot;data&quot;: [],
+        &quot;data&quot;: [
+            {
+                &quot;id&quot;: 4,
+                &quot;name&quot;: &quot;PRISAA National Swimming Championship 2025&quot;,
+                &quot;short_name&quot;: &quot;Nat&#039;l Swimming 2025&quot;,
+                &quot;tournament_code&quot;: &quot;NS2025&quot;,
+                &quot;description&quot;: &quot;National swimming meet for private school athletes&quot;,
+                &quot;type&quot;: &quot;championship&quot;,
+                &quot;level&quot;: &quot;national&quot;,
+                &quot;start_date&quot;: &quot;2025-05-05T00:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-05-08T00:00:00.000000Z&quot;,
+                &quot;registration_end&quot;: &quot;2025-04-20T00:00:00.000000Z&quot;,
+                &quot;host_location&quot;: &quot;Rizal Memorial Sports Complex, Manila&quot;,
+                &quot;host_school_id&quot;: null,
+                &quot;tournament_manager_id&quot;: null,
+                &quot;has_medal_tally&quot;: true,
+                &quot;sports_included&quot;: [
+                    &quot;Swimming&quot;
+                ],
+                &quot;status&quot;: &quot;registration_open&quot;,
+                &quot;is_public&quot;: true,
+                &quot;champion_school_id&quot;: null,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;host_region_id&quot;: 1,
+                &quot;scope&quot;: &quot;national&quot;
+            },
+            {
+                &quot;id&quot;: 9,
+                &quot;name&quot;: &quot;PRISAA Region XI Basketball Championship 2025&quot;,
+                &quot;short_name&quot;: &quot;Reg XI Basketball 2025&quot;,
+                &quot;tournament_code&quot;: &quot;RV11B2025&quot;,
+                &quot;description&quot;: &quot;Regional basketball championship for Davao Region private schools&quot;,
+                &quot;type&quot;: &quot;championship&quot;,
+                &quot;level&quot;: &quot;regional&quot;,
+                &quot;start_date&quot;: &quot;2025-04-20T00:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-04-25T00:00:00.000000Z&quot;,
+                &quot;registration_end&quot;: &quot;2025-04-10T00:00:00.000000Z&quot;,
+                &quot;host_location&quot;: &quot;Davao City Sports Complex, Davao City&quot;,
+                &quot;host_school_id&quot;: null,
+                &quot;tournament_manager_id&quot;: null,
+                &quot;has_medal_tally&quot;: true,
+                &quot;sports_included&quot;: [
+                    &quot;Basketball&quot;
+                ],
+                &quot;status&quot;: &quot;registration_open&quot;,
+                &quot;is_public&quot;: true,
+                &quot;champion_school_id&quot;: null,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;host_region_id&quot;: 14,
+                &quot;scope&quot;: &quot;single_region&quot;
+            },
+            {
+                &quot;id&quot;: 3,
+                &quot;name&quot;: &quot;PRISAA National Volleyball Championship 2025&quot;,
+                &quot;short_name&quot;: &quot;Nat&#039;l Volleyball 2025&quot;,
+                &quot;tournament_code&quot;: &quot;NV2025&quot;,
+                &quot;description&quot;: &quot;National volleyball competition featuring the best private school teams&quot;,
+                &quot;type&quot;: &quot;championship&quot;,
+                &quot;level&quot;: &quot;national&quot;,
+                &quot;start_date&quot;: &quot;2025-04-10T00:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-04-17T00:00:00.000000Z&quot;,
+                &quot;registration_end&quot;: &quot;2025-03-25T00:00:00.000000Z&quot;,
+                &quot;host_location&quot;: &quot;Cebu City Sports Center, Cebu City&quot;,
+                &quot;host_school_id&quot;: null,
+                &quot;tournament_manager_id&quot;: null,
+                &quot;has_medal_tally&quot;: true,
+                &quot;sports_included&quot;: [
+                    &quot;Volleyball&quot;
+                ],
+                &quot;status&quot;: &quot;registration_open&quot;,
+                &quot;is_public&quot;: true,
+                &quot;champion_school_id&quot;: null,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;host_region_id&quot;: 10,
+                &quot;scope&quot;: &quot;national&quot;
+            },
+            {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;2025 PRISAA National Games&quot;,
+                &quot;short_name&quot;: &quot;2025 National Games&quot;,
+                &quot;tournament_code&quot;: &quot;PNG2025&quot;,
+                &quot;description&quot;: &quot;The 2025 PRISAA National Games hosted in Tuguegarao City, Cagayan Valley, featuring athletes from all 17 regions competing in multiple sports categories&quot;,
+                &quot;type&quot;: &quot;championship&quot;,
+                &quot;level&quot;: &quot;national&quot;,
+                &quot;start_date&quot;: &quot;2025-04-03T00:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-04-11T00:00:00.000000Z&quot;,
+                &quot;registration_end&quot;: &quot;2025-03-15T00:00:00.000000Z&quot;,
+                &quot;host_location&quot;: &quot;University of Cagayan Valley, Tuguegarao City, Cagayan Valley&quot;,
+                &quot;host_school_id&quot;: null,
+                &quot;tournament_manager_id&quot;: null,
+                &quot;has_medal_tally&quot;: true,
+                &quot;sports_included&quot;: [
+                    &quot;Basketball&quot;,
+                    &quot;Volleyball&quot;,
+                    &quot;Athletics (Track and Field)&quot;,
+                    &quot;Swimming&quot;,
+                    &quot;Badminton&quot;,
+                    &quot;Table Tennis&quot;,
+                    &quot;Chess&quot;,
+                    &quot;Taekwondo&quot;,
+                    &quot;Arnis&quot;
+                ],
+                &quot;status&quot;: &quot;registration_open&quot;,
+                &quot;is_public&quot;: true,
+                &quot;champion_school_id&quot;: null,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;host_region_id&quot;: 4,
+                &quot;scope&quot;: &quot;national&quot;
+            },
+            {
+                &quot;id&quot;: 2,
+                &quot;name&quot;: &quot;PRISAA National Basketball Championship 2025&quot;,
+                &quot;short_name&quot;: &quot;Nat&#039;l Basketball 2025&quot;,
+                &quot;tournament_code&quot;: &quot;NB2025&quot;,
+                &quot;description&quot;: &quot;National level basketball competition for private schools across the Philippines&quot;,
+                &quot;type&quot;: &quot;championship&quot;,
+                &quot;level&quot;: &quot;national&quot;,
+                &quot;start_date&quot;: &quot;2025-03-15T00:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-03-22T00:00:00.000000Z&quot;,
+                &quot;registration_end&quot;: &quot;2025-02-28T00:00:00.000000Z&quot;,
+                &quot;host_location&quot;: &quot;Rizal Memorial Sports Complex, Manila&quot;,
+                &quot;host_school_id&quot;: null,
+                &quot;tournament_manager_id&quot;: null,
+                &quot;has_medal_tally&quot;: true,
+                &quot;sports_included&quot;: [
+                    &quot;Basketball&quot;
+                ],
+                &quot;status&quot;: &quot;registration_open&quot;,
+                &quot;is_public&quot;: true,
+                &quot;champion_school_id&quot;: null,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;host_region_id&quot;: 1,
+                &quot;scope&quot;: &quot;national&quot;
+            },
+            {
+                &quot;id&quot;: 8,
+                &quot;name&quot;: &quot;PRISAA Region VII Multi-Sports Championship 2025&quot;,
+                &quot;short_name&quot;: &quot;Reg VII Multi-Sports 2025&quot;,
+                &quot;tournament_code&quot;: &quot;RV7MS2025&quot;,
+                &quot;description&quot;: &quot;Regional multi-sport championship for Central Visayas private schools&quot;,
+                &quot;type&quot;: &quot;championship&quot;,
+                &quot;level&quot;: &quot;regional&quot;,
+                &quot;start_date&quot;: &quot;2025-03-01T00:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-03-08T00:00:00.000000Z&quot;,
+                &quot;registration_end&quot;: &quot;2025-02-15T00:00:00.000000Z&quot;,
+                &quot;host_location&quot;: &quot;Cebu City Sports Center, Cebu City&quot;,
+                &quot;host_school_id&quot;: null,
+                &quot;tournament_manager_id&quot;: null,
+                &quot;has_medal_tally&quot;: true,
+                &quot;sports_included&quot;: [
+                    &quot;Basketball&quot;,
+                    &quot;Volleyball&quot;,
+                    &quot;Swimming&quot;,
+                    &quot;Athletics (Track and Field)&quot;
+                ],
+                &quot;status&quot;: &quot;registration_open&quot;,
+                &quot;is_public&quot;: true,
+                &quot;champion_school_id&quot;: null,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;host_region_id&quot;: 10,
+                &quot;scope&quot;: &quot;single_region&quot;
+            },
+            {
+                &quot;id&quot;: 10,
+                &quot;name&quot;: &quot;PRISAA NCR Volleyball Championship 2025&quot;,
+                &quot;short_name&quot;: &quot;NCR Volleyball 2025&quot;,
+                &quot;tournament_code&quot;: &quot;NCRV2025&quot;,
+                &quot;description&quot;: &quot;NCR regional volleyball championship for Metro Manila private schools&quot;,
+                &quot;type&quot;: &quot;championship&quot;,
+                &quot;level&quot;: &quot;regional&quot;,
+                &quot;start_date&quot;: &quot;2025-02-25T00:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-03-02T00:00:00.000000Z&quot;,
+                &quot;registration_end&quot;: &quot;2025-02-15T00:00:00.000000Z&quot;,
+                &quot;host_location&quot;: &quot;PhilSports Arena, Pasig City&quot;,
+                &quot;host_school_id&quot;: null,
+                &quot;tournament_manager_id&quot;: null,
+                &quot;has_medal_tally&quot;: true,
+                &quot;sports_included&quot;: [
+                    &quot;Volleyball&quot;
+                ],
+                &quot;status&quot;: &quot;registration_open&quot;,
+                &quot;is_public&quot;: true,
+                &quot;champion_school_id&quot;: null,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;host_region_id&quot;: 1,
+                &quot;scope&quot;: &quot;single_region&quot;
+            },
+            {
+                &quot;id&quot;: 6,
+                &quot;name&quot;: &quot;PRISAA Region V Volleyball Championship 2025&quot;,
+                &quot;short_name&quot;: &quot;Reg V Volleyball 2025&quot;,
+                &quot;tournament_code&quot;: &quot;RV5V2025&quot;,
+                &quot;description&quot;: &quot;Regional volleyball competition for Bicol schools&quot;,
+                &quot;type&quot;: &quot;championship&quot;,
+                &quot;level&quot;: &quot;regional&quot;,
+                &quot;start_date&quot;: &quot;2025-02-10T00:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-02-15T00:00:00.000000Z&quot;,
+                &quot;registration_end&quot;: &quot;2025-01-30T00:00:00.000000Z&quot;,
+                &quot;host_location&quot;: &quot;Divine Word College of Legazpi, Legazpi City&quot;,
+                &quot;host_school_id&quot;: null,
+                &quot;tournament_manager_id&quot;: null,
+                &quot;has_medal_tally&quot;: true,
+                &quot;sports_included&quot;: [
+                    &quot;Volleyball&quot;
+                ],
+                &quot;status&quot;: &quot;registration_open&quot;,
+                &quot;is_public&quot;: true,
+                &quot;champion_school_id&quot;: null,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;host_region_id&quot;: 8,
+                &quot;scope&quot;: &quot;single_region&quot;
+            },
+            {
+                &quot;id&quot;: 5,
+                &quot;name&quot;: &quot;PRISAA Region V Basketball Championship 2025&quot;,
+                &quot;short_name&quot;: &quot;Reg V Basketball 2025&quot;,
+                &quot;tournament_code&quot;: &quot;RV5B2025&quot;,
+                &quot;description&quot;: &quot;Regional basketball championship for Bicol private schools&quot;,
+                &quot;type&quot;: &quot;championship&quot;,
+                &quot;level&quot;: &quot;regional&quot;,
+                &quot;start_date&quot;: &quot;2025-01-20T00:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2025-01-25T00:00:00.000000Z&quot;,
+                &quot;registration_end&quot;: &quot;2025-01-10T00:00:00.000000Z&quot;,
+                &quot;host_location&quot;: &quot;Bicol University Gymnasium, Legazpi City&quot;,
+                &quot;host_school_id&quot;: null,
+                &quot;tournament_manager_id&quot;: null,
+                &quot;has_medal_tally&quot;: true,
+                &quot;sports_included&quot;: [
+                    &quot;Basketball&quot;
+                ],
+                &quot;status&quot;: &quot;registration_open&quot;,
+                &quot;is_public&quot;: true,
+                &quot;champion_school_id&quot;: null,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;host_region_id&quot;: 8,
+                &quot;scope&quot;: &quot;single_region&quot;
+            },
+            {
+                &quot;id&quot;: 7,
+                &quot;name&quot;: &quot;PRISAA Sorsogon Provincial Meet 2025&quot;,
+                &quot;short_name&quot;: &quot;Sorsogon Provincial 2025&quot;,
+                &quot;tournament_code&quot;: &quot;SOR2025&quot;,
+                &quot;description&quot;: &quot;Provincial multi-sport competition for Sorsogon private schools&quot;,
+                &quot;type&quot;: &quot;championship&quot;,
+                &quot;level&quot;: &quot;provincial&quot;,
+                &quot;start_date&quot;: &quot;2024-11-15T00:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2024-11-20T00:00:00.000000Z&quot;,
+                &quot;registration_end&quot;: &quot;2024-11-05T00:00:00.000000Z&quot;,
+                &quot;host_location&quot;: &quot;Sorsogon State University Sports Complex, Sorsogon City&quot;,
+                &quot;host_school_id&quot;: null,
+                &quot;tournament_manager_id&quot;: null,
+                &quot;has_medal_tally&quot;: true,
+                &quot;sports_included&quot;: [
+                    &quot;Basketball&quot;,
+                    &quot;Volleyball&quot;,
+                    &quot;Athletics (Track and Field)&quot;,
+                    &quot;Swimming&quot;
+                ],
+                &quot;status&quot;: &quot;completed&quot;,
+                &quot;is_public&quot;: true,
+                &quot;champion_school_id&quot;: null,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;host_region_id&quot;: 8,
+                &quot;scope&quot;: &quot;single_region&quot;
+            },
+            {
+                &quot;id&quot;: 12,
+                &quot;name&quot;: &quot;PRISAA Bohol Taekwondo Championship 2024&quot;,
+                &quot;short_name&quot;: &quot;Bohol Taekwondo 2024&quot;,
+                &quot;tournament_code&quot;: &quot;BOHTKD2024&quot;,
+                &quot;description&quot;: &quot;Regional Taekwondo championship held in Bohol featuring champions from various schools&quot;,
+                &quot;type&quot;: &quot;championship&quot;,
+                &quot;level&quot;: &quot;regional&quot;,
+                &quot;start_date&quot;: &quot;2024-09-10T00:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2024-09-15T00:00:00.000000Z&quot;,
+                &quot;registration_end&quot;: &quot;2024-08-25T00:00:00.000000Z&quot;,
+                &quot;host_location&quot;: &quot;Bohol Provincial Sports Complex&quot;,
+                &quot;host_school_id&quot;: null,
+                &quot;tournament_manager_id&quot;: null,
+                &quot;has_medal_tally&quot;: true,
+                &quot;sports_included&quot;: [
+                    &quot;Taekwondo&quot;
+                ],
+                &quot;status&quot;: &quot;completed&quot;,
+                &quot;is_public&quot;: true,
+                &quot;champion_school_id&quot;: null,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;host_region_id&quot;: 10,
+                &quot;scope&quot;: &quot;single_region&quot;
+            },
+            {
+                &quot;id&quot;: 13,
+                &quot;name&quot;: &quot;PRISAA Camarines Sur Mutya ng PRISAA 2024&quot;,
+                &quot;short_name&quot;: &quot;Camarines Sur Mutya 2024&quot;,
+                &quot;tournament_code&quot;: &quot;CSMUTYA2024&quot;,
+                &quot;description&quot;: &quot;Beauty pageant competition for PRISAA featuring candidates from Camarines Sur schools&quot;,
+                &quot;type&quot;: &quot;invitational&quot;,
+                &quot;level&quot;: &quot;regional&quot;,
+                &quot;start_date&quot;: &quot;2024-09-05T00:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2024-09-05T00:00:00.000000Z&quot;,
+                &quot;registration_end&quot;: &quot;2024-08-20T00:00:00.000000Z&quot;,
+                &quot;host_location&quot;: &quot;Naga College Foundation, Camarines Sur&quot;,
+                &quot;host_school_id&quot;: null,
+                &quot;tournament_manager_id&quot;: null,
+                &quot;has_medal_tally&quot;: false,
+                &quot;sports_included&quot;: [
+                    &quot;Mutya ng PRISAA&quot;
+                ],
+                &quot;status&quot;: &quot;completed&quot;,
+                &quot;is_public&quot;: true,
+                &quot;champion_school_id&quot;: null,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;host_region_id&quot;: 8,
+                &quot;scope&quot;: &quot;single_region&quot;
+            },
+            {
+                &quot;id&quot;: 11,
+                &quot;name&quot;: &quot;PRISAA National Athletics Championship 2024&quot;,
+                &quot;short_name&quot;: &quot;Nat&#039;l Athletics 2024&quot;,
+                &quot;tournament_code&quot;: &quot;NA2024&quot;,
+                &quot;description&quot;: &quot;2024 National track and field championship held at UP Diliman&quot;,
+                &quot;type&quot;: &quot;championship&quot;,
+                &quot;level&quot;: &quot;national&quot;,
+                &quot;start_date&quot;: &quot;2024-05-10T00:00:00.000000Z&quot;,
+                &quot;end_date&quot;: &quot;2024-05-15T00:00:00.000000Z&quot;,
+                &quot;registration_end&quot;: &quot;2024-04-25T00:00:00.000000Z&quot;,
+                &quot;host_location&quot;: &quot;University of the Philippines Diliman, Quezon City&quot;,
+                &quot;host_school_id&quot;: null,
+                &quot;tournament_manager_id&quot;: null,
+                &quot;has_medal_tally&quot;: true,
+                &quot;sports_included&quot;: [
+                    &quot;Athletics (Track and Field)&quot;
+                ],
+                &quot;status&quot;: &quot;completed&quot;,
+                &quot;is_public&quot;: true,
+                &quot;champion_school_id&quot;: null,
+                &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+                &quot;host_region_id&quot;: 1,
+                &quot;scope&quot;: &quot;national&quot;
+            }
+        ],
         &quot;first_page_url&quot;: &quot;http://localhost:8000/api/public/tournaments?page=1&quot;,
-        &quot;from&quot;: null,
+        &quot;from&quot;: 1,
         &quot;last_page&quot;: 1,
         &quot;last_page_url&quot;: &quot;http://localhost:8000/api/public/tournaments?page=1&quot;,
         &quot;links&quot;: [
@@ -3972,8 +5853,8 @@ access-control-allow-credentials: true
         &quot;path&quot;: &quot;http://localhost:8000/api/public/tournaments&quot;,
         &quot;per_page&quot;: 15,
         &quot;prev_page_url&quot;: null,
-        &quot;to&quot;: null,
-        &quot;total&quot;: 0
+        &quot;to&quot;: 13,
+        &quot;total&quot;: 13
     }
 }</code>
  </pre>
@@ -4355,7 +6236,115 @@ access-control-allow-credentials: true
 <code class="language-json" style="max-height: 300px;">{
     &quot;success&quot;: true,
     &quot;message&quot;: &quot;Completed tournaments retrieved successfully&quot;,
-    &quot;data&quot;: []
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 7,
+            &quot;name&quot;: &quot;PRISAA Sorsogon Provincial Meet 2025&quot;,
+            &quot;short_name&quot;: &quot;Sorsogon Provincial 2025&quot;,
+            &quot;tournament_code&quot;: &quot;SOR2025&quot;,
+            &quot;description&quot;: &quot;Provincial multi-sport competition for Sorsogon private schools&quot;,
+            &quot;type&quot;: &quot;championship&quot;,
+            &quot;level&quot;: &quot;provincial&quot;,
+            &quot;start_date&quot;: &quot;2024-11-15T00:00:00.000000Z&quot;,
+            &quot;end_date&quot;: &quot;2024-11-20T00:00:00.000000Z&quot;,
+            &quot;registration_end&quot;: &quot;2024-11-05T00:00:00.000000Z&quot;,
+            &quot;host_location&quot;: &quot;Sorsogon State University Sports Complex, Sorsogon City&quot;,
+            &quot;host_school_id&quot;: null,
+            &quot;tournament_manager_id&quot;: null,
+            &quot;has_medal_tally&quot;: true,
+            &quot;sports_included&quot;: [
+                &quot;Basketball&quot;,
+                &quot;Volleyball&quot;,
+                &quot;Athletics (Track and Field)&quot;,
+                &quot;Swimming&quot;
+            ],
+            &quot;status&quot;: &quot;completed&quot;,
+            &quot;is_public&quot;: true,
+            &quot;champion_school_id&quot;: null,
+            &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+            &quot;host_region_id&quot;: 8,
+            &quot;scope&quot;: &quot;single_region&quot;
+        },
+        {
+            &quot;id&quot;: 12,
+            &quot;name&quot;: &quot;PRISAA Bohol Taekwondo Championship 2024&quot;,
+            &quot;short_name&quot;: &quot;Bohol Taekwondo 2024&quot;,
+            &quot;tournament_code&quot;: &quot;BOHTKD2024&quot;,
+            &quot;description&quot;: &quot;Regional Taekwondo championship held in Bohol featuring champions from various schools&quot;,
+            &quot;type&quot;: &quot;championship&quot;,
+            &quot;level&quot;: &quot;regional&quot;,
+            &quot;start_date&quot;: &quot;2024-09-10T00:00:00.000000Z&quot;,
+            &quot;end_date&quot;: &quot;2024-09-15T00:00:00.000000Z&quot;,
+            &quot;registration_end&quot;: &quot;2024-08-25T00:00:00.000000Z&quot;,
+            &quot;host_location&quot;: &quot;Bohol Provincial Sports Complex&quot;,
+            &quot;host_school_id&quot;: null,
+            &quot;tournament_manager_id&quot;: null,
+            &quot;has_medal_tally&quot;: true,
+            &quot;sports_included&quot;: [
+                &quot;Taekwondo&quot;
+            ],
+            &quot;status&quot;: &quot;completed&quot;,
+            &quot;is_public&quot;: true,
+            &quot;champion_school_id&quot;: null,
+            &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+            &quot;host_region_id&quot;: 10,
+            &quot;scope&quot;: &quot;single_region&quot;
+        },
+        {
+            &quot;id&quot;: 13,
+            &quot;name&quot;: &quot;PRISAA Camarines Sur Mutya ng PRISAA 2024&quot;,
+            &quot;short_name&quot;: &quot;Camarines Sur Mutya 2024&quot;,
+            &quot;tournament_code&quot;: &quot;CSMUTYA2024&quot;,
+            &quot;description&quot;: &quot;Beauty pageant competition for PRISAA featuring candidates from Camarines Sur schools&quot;,
+            &quot;type&quot;: &quot;invitational&quot;,
+            &quot;level&quot;: &quot;regional&quot;,
+            &quot;start_date&quot;: &quot;2024-09-05T00:00:00.000000Z&quot;,
+            &quot;end_date&quot;: &quot;2024-09-05T00:00:00.000000Z&quot;,
+            &quot;registration_end&quot;: &quot;2024-08-20T00:00:00.000000Z&quot;,
+            &quot;host_location&quot;: &quot;Naga College Foundation, Camarines Sur&quot;,
+            &quot;host_school_id&quot;: null,
+            &quot;tournament_manager_id&quot;: null,
+            &quot;has_medal_tally&quot;: false,
+            &quot;sports_included&quot;: [
+                &quot;Mutya ng PRISAA&quot;
+            ],
+            &quot;status&quot;: &quot;completed&quot;,
+            &quot;is_public&quot;: true,
+            &quot;champion_school_id&quot;: null,
+            &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+            &quot;host_region_id&quot;: 8,
+            &quot;scope&quot;: &quot;single_region&quot;
+        },
+        {
+            &quot;id&quot;: 11,
+            &quot;name&quot;: &quot;PRISAA National Athletics Championship 2024&quot;,
+            &quot;short_name&quot;: &quot;Nat&#039;l Athletics 2024&quot;,
+            &quot;tournament_code&quot;: &quot;NA2024&quot;,
+            &quot;description&quot;: &quot;2024 National track and field championship held at UP Diliman&quot;,
+            &quot;type&quot;: &quot;championship&quot;,
+            &quot;level&quot;: &quot;national&quot;,
+            &quot;start_date&quot;: &quot;2024-05-10T00:00:00.000000Z&quot;,
+            &quot;end_date&quot;: &quot;2024-05-15T00:00:00.000000Z&quot;,
+            &quot;registration_end&quot;: &quot;2024-04-25T00:00:00.000000Z&quot;,
+            &quot;host_location&quot;: &quot;University of the Philippines Diliman, Quezon City&quot;,
+            &quot;host_school_id&quot;: null,
+            &quot;tournament_manager_id&quot;: null,
+            &quot;has_medal_tally&quot;: true,
+            &quot;sports_included&quot;: [
+                &quot;Athletics (Track and Field)&quot;
+            ],
+            &quot;status&quot;: &quot;completed&quot;,
+            &quot;is_public&quot;: true,
+            &quot;champion_school_id&quot;: null,
+            &quot;created_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-09-19T03:24:41.000000Z&quot;,
+            &quot;host_region_id&quot;: 1,
+            &quot;scope&quot;: &quot;national&quot;
+        }
+    ]
 }</code>
  </pre>
     </span>
@@ -4423,6 +6412,133 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Accept"                data-endpoint="GETapi-public-tournaments-completed"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-public-users-online">Get online coaches and tournament managers.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-public-users-online">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/public/users/online" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/public/users/online"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-public-users-online">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;success&quot;: true,
+    &quot;message&quot;: &quot;Online users retrieved successfully&quot;,
+    &quot;data&quot;: []
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-public-users-online" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-public-users-online"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-public-users-online"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-public-users-online" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-public-users-online">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-public-users-online" data-method="GET"
+      data-path="api/public/users/online"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-public-users-online', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-public-users-online"
+                    onclick="tryItOut('GETapi-public-users-online');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-public-users-online"
+                    onclick="cancelTryOut('GETapi-public-users-online');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-public-users-online"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/public/users/online</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-public-users-online"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-public-users-online"
                value="application/json"
                data-component="header">
     <br>
@@ -5249,6 +7365,131 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
+                    <h2 id="endpoints-GETapi-users-online">Get online coaches and tournament managers.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-users-online">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/users/online" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/users/online"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-users-online">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-users-online" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-users-online"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-users-online"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-users-online" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-users-online">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-users-online" data-method="GET"
+      data-path="api/users/online"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-users-online', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-users-online"
+                    onclick="tryItOut('GETapi-users-online');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-users-online"
+                    onclick="cancelTryOut('GETapi-users-online');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-users-online"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/users/online</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-users-online"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-users-online"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
                     <h2 id="endpoints-GETapi-users-profile">Get user profile (for authenticated user).</h2>
 
 <p>
@@ -5603,14 +7844,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/users/consequatur" \
+    --get "http://localhost:8000/api/users/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/users/consequatur"
+    "http://localhost:8000/api/users/1"
 );
 
 const headers = {
@@ -5716,14 +7957,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
                         <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>user</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
+<small>integer</small>&nbsp;
  &nbsp;
-                <input type="text" style="display: none"
-                              name="user"                data-endpoint="GETapi-users--user-"
-               value="consequatur"
+                <input type="number" style="display: none"
+               step="any"               name="user"                data-endpoint="GETapi-users--user-"
+               value="1"
                data-component="url">
     <br>
-<p>The user. Example: <code>consequatur</code></p>
+<p>The user. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -5740,14 +7981,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/users/consequatur" \
+    "http://localhost:8000/api/users/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/users/consequatur"
+    "http://localhost:8000/api/users/1"
 );
 
 const headers = {
@@ -5836,14 +8077,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
                         <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>user</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
+<small>integer</small>&nbsp;
  &nbsp;
-                <input type="text" style="display: none"
-                              name="user"                data-endpoint="PUTapi-users--user-"
-               value="consequatur"
+                <input type="number" style="display: none"
+               step="any"               name="user"                data-endpoint="PUTapi-users--user-"
+               value="1"
                data-component="url">
     <br>
-<p>The user. Example: <code>consequatur</code></p>
+<p>The user. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -5860,14 +8101,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/users/consequatur" \
+    "http://localhost:8000/api/users/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/users/consequatur"
+    "http://localhost:8000/api/users/1"
 );
 
 const headers = {
@@ -5956,14 +8197,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
                         <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>user</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
+<small>integer</small>&nbsp;
  &nbsp;
-                <input type="text" style="display: none"
-                              name="user"                data-endpoint="DELETEapi-users--user-"
-               value="consequatur"
+                <input type="number" style="display: none"
+               step="any"               name="user"                data-endpoint="DELETEapi-users--user-"
+               value="1"
                data-component="url">
     <br>
-<p>The user. Example: <code>consequatur</code></p>
+<p>The user. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -6213,14 +8454,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/schools/17" \
+    --get "http://localhost:8000/api/schools/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/schools/17"
+    "http://localhost:8000/api/schools/1"
 );
 
 const headers = {
@@ -6330,10 +8571,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="school_id"                data-endpoint="GETapi-schools--school_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the school. Example: <code>17</code></p>
+<p>The ID of the school. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -6350,14 +8591,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/schools/17" \
+    "http://localhost:8000/api/schools/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/schools/17"
+    "http://localhost:8000/api/schools/1"
 );
 
 const headers = {
@@ -6450,10 +8691,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="school_id"                data-endpoint="PUTapi-schools--school_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the school. Example: <code>17</code></p>
+<p>The ID of the school. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -6470,14 +8711,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/schools/17" \
+    "http://localhost:8000/api/schools/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/schools/17"
+    "http://localhost:8000/api/schools/1"
 );
 
 const headers = {
@@ -6570,10 +8811,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="school_id"                data-endpoint="DELETEapi-schools--school_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the school. Example: <code>17</code></p>
+<p>The ID of the school. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -6590,14 +8831,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/schools/17/statistics" \
+    --get "http://localhost:8000/api/schools/1/statistics" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/schools/17/statistics"
+    "http://localhost:8000/api/schools/1/statistics"
 );
 
 const headers = {
@@ -6707,10 +8948,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="school_id"                data-endpoint="GETapi-schools--school_id--statistics"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the school. Example: <code>17</code></p>
+<p>The ID of the school. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -6727,14 +8968,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/schools/region/consequatur" \
+    --get "http://localhost:8000/api/schools/region/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/schools/region/consequatur"
+    "http://localhost:8000/api/schools/region/1"
 );
 
 const headers = {
@@ -6840,14 +9081,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
                         <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>region</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
+<small>integer</small>&nbsp;
  &nbsp;
-                <input type="text" style="display: none"
-                              name="region"                data-endpoint="GETapi-schools-region--region-"
-               value="consequatur"
+                <input type="number" style="display: none"
+               step="any"               name="region"                data-endpoint="GETapi-schools-region--region-"
+               value="1"
                data-component="url">
     <br>
-<p>The region. Example: <code>consequatur</code></p>
+<p>The region. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -7097,14 +9338,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/athletes/17" \
+    --get "http://localhost:8000/api/athletes/2" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/athletes/17"
+    "http://localhost:8000/api/athletes/2"
 );
 
 const headers = {
@@ -7214,10 +9455,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="athlete_id"                data-endpoint="GETapi-athletes--athlete_id-"
-               value="17"
+               value="2"
                data-component="url">
     <br>
-<p>The ID of the athlete. Example: <code>17</code></p>
+<p>The ID of the athlete. Example: <code>2</code></p>
             </div>
                     </form>
 
@@ -7234,14 +9475,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/athletes/17" \
+    "http://localhost:8000/api/athletes/2" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/athletes/17"
+    "http://localhost:8000/api/athletes/2"
 );
 
 const headers = {
@@ -7334,10 +9575,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="athlete_id"                data-endpoint="PUTapi-athletes--athlete_id-"
-               value="17"
+               value="2"
                data-component="url">
     <br>
-<p>The ID of the athlete. Example: <code>17</code></p>
+<p>The ID of the athlete. Example: <code>2</code></p>
             </div>
                     </form>
 
@@ -7354,14 +9595,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/athletes/17" \
+    "http://localhost:8000/api/athletes/2" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/athletes/17"
+    "http://localhost:8000/api/athletes/2"
 );
 
 const headers = {
@@ -7454,10 +9695,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="athlete_id"                data-endpoint="DELETEapi-athletes--athlete_id-"
-               value="17"
+               value="2"
                data-component="url">
     <br>
-<p>The ID of the athlete. Example: <code>17</code></p>
+<p>The ID of the athlete. Example: <code>2</code></p>
             </div>
                     </form>
 
@@ -7474,14 +9715,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/athletes/school/17" \
+    --get "http://localhost:8000/api/athletes/school/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/athletes/school/17"
+    "http://localhost:8000/api/athletes/school/1"
 );
 
 const headers = {
@@ -7591,10 +9832,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="schoolId"                data-endpoint="GETapi-athletes-school--schoolId-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -7611,14 +9852,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/athletes/sport/17" \
+    --get "http://localhost:8000/api/athletes/sport/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/athletes/sport/17"
+    "http://localhost:8000/api/athletes/sport/1"
 );
 
 const headers = {
@@ -7728,10 +9969,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sportId"                data-endpoint="GETapi-athletes-sport--sportId-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -7981,14 +10222,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/sports/17" \
+    --get "http://localhost:8000/api/sports/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/sports/17"
+    "http://localhost:8000/api/sports/1"
 );
 
 const headers = {
@@ -8098,10 +10339,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sport_id"                data-endpoint="GETapi-sports--sport_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the sport. Example: <code>17</code></p>
+<p>The ID of the sport. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -8118,14 +10359,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/sports/17" \
+    "http://localhost:8000/api/sports/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/sports/17"
+    "http://localhost:8000/api/sports/1"
 );
 
 const headers = {
@@ -8218,10 +10459,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sport_id"                data-endpoint="PUTapi-sports--sport_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the sport. Example: <code>17</code></p>
+<p>The ID of the sport. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -8238,14 +10479,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/sports/17" \
+    "http://localhost:8000/api/sports/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/sports/17"
+    "http://localhost:8000/api/sports/1"
 );
 
 const headers = {
@@ -8338,10 +10579,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sport_id"                data-endpoint="DELETEapi-sports--sport_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the sport. Example: <code>17</code></p>
+<p>The ID of the sport. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -8495,14 +10736,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/sports/17/statistics" \
+    --get "http://localhost:8000/api/sports/1/statistics" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/sports/17/statistics"
+    "http://localhost:8000/api/sports/1/statistics"
 );
 
 const headers = {
@@ -8612,10 +10853,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sport_id"                data-endpoint="GETapi-sports--sport_id--statistics"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the sport. Example: <code>17</code></p>
+<p>The ID of the sport. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -9242,14 +11483,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/teams/school/17" \
+    --get "http://localhost:8000/api/teams/school/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/teams/school/17"
+    "http://localhost:8000/api/teams/school/1"
 );
 
 const headers = {
@@ -9359,10 +11600,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="schoolId"                data-endpoint="GETapi-teams-school--schoolId-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -9379,14 +11620,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/teams/sport/17" \
+    --get "http://localhost:8000/api/teams/sport/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/teams/sport/17"
+    "http://localhost:8000/api/teams/sport/1"
 );
 
 const headers = {
@@ -9496,10 +11737,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sportId"                data-endpoint="GETapi-teams-sport--sportId-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -10006,14 +12247,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/venues/17" \
+    --get "http://localhost:8000/api/venues/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/venues/17"
+    "http://localhost:8000/api/venues/1"
 );
 
 const headers = {
@@ -10123,10 +12364,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="venue_id"                data-endpoint="GETapi-venues--venue_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the venue. Example: <code>17</code></p>
+<p>The ID of the venue. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -10143,14 +12384,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/venues/17" \
+    "http://localhost:8000/api/venues/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/venues/17"
+    "http://localhost:8000/api/venues/1"
 );
 
 const headers = {
@@ -10243,10 +12484,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="venue_id"                data-endpoint="PUTapi-venues--venue_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the venue. Example: <code>17</code></p>
+<p>The ID of the venue. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -10263,14 +12504,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/venues/17" \
+    "http://localhost:8000/api/venues/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/venues/17"
+    "http://localhost:8000/api/venues/1"
 );
 
 const headers = {
@@ -10363,10 +12604,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="venue_id"                data-endpoint="DELETEapi-venues--venue_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the venue. Example: <code>17</code></p>
+<p>The ID of the venue. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -10383,14 +12624,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/venues/school/17" \
+    --get "http://localhost:8000/api/venues/school/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/venues/school/17"
+    "http://localhost:8000/api/venues/school/1"
 );
 
 const headers = {
@@ -10500,10 +12741,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="schoolId"                data-endpoint="GETapi-venues-school--schoolId-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -10657,14 +12898,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/venues/17/availability" \
+    --get "http://localhost:8000/api/venues/1/availability" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/venues/17/availability"
+    "http://localhost:8000/api/venues/1/availability"
 );
 
 const headers = {
@@ -10774,10 +13015,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="venue_id"                data-endpoint="GETapi-venues--venue_id--availability"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the venue. Example: <code>17</code></p>
+<p>The ID of the venue. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -10794,14 +13035,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/venues/17/statistics" \
+    --get "http://localhost:8000/api/venues/1/statistics" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/venues/17/statistics"
+    "http://localhost:8000/api/venues/1/statistics"
 );
 
 const headers = {
@@ -10911,10 +13152,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="venue_id"                data-endpoint="GETapi-venues--venue_id--statistics"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the venue. Example: <code>17</code></p>
+<p>The ID of the venue. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -11414,14 +13655,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/schedules/sport/17" \
+    --get "http://localhost:8000/api/schedules/sport/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/schedules/sport/17"
+    "http://localhost:8000/api/schedules/sport/1"
 );
 
 const headers = {
@@ -11531,10 +13772,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sportId"                data-endpoint="GETapi-schedules-sport--sportId-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -11551,14 +13792,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/schedules/venue/17" \
+    --get "http://localhost:8000/api/schedules/venue/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/schedules/venue/17"
+    "http://localhost:8000/api/schedules/venue/1"
 );
 
 const headers = {
@@ -11668,10 +13909,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="venueId"                data-endpoint="GETapi-schedules-venue--venueId-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -13535,14 +15776,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/officials/sport/17" \
+    --get "http://localhost:8000/api/officials/sport/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/officials/sport/17"
+    "http://localhost:8000/api/officials/sport/1"
 );
 
 const headers = {
@@ -13652,10 +15893,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sportId"                data-endpoint="GETapi-officials-sport--sportId-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -14071,14 +16312,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/officials/17" \
+    --get "http://localhost:8000/api/officials/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/officials/17"
+    "http://localhost:8000/api/officials/1"
 );
 
 const headers = {
@@ -14188,10 +16429,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="official_id"                data-endpoint="GETapi-officials--official_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the official. Example: <code>17</code></p>
+<p>The ID of the official. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -14208,14 +16449,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/officials/17" \
+    "http://localhost:8000/api/officials/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/officials/17"
+    "http://localhost:8000/api/officials/1"
 );
 
 const headers = {
@@ -14308,10 +16549,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="official_id"                data-endpoint="PUTapi-officials--official_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the official. Example: <code>17</code></p>
+<p>The ID of the official. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -14328,14 +16569,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/officials/17" \
+    "http://localhost:8000/api/officials/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/officials/17"
+    "http://localhost:8000/api/officials/1"
 );
 
 const headers = {
@@ -14428,10 +16669,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="official_id"                data-endpoint="DELETEapi-officials--official_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the official. Example: <code>17</code></p>
+<p>The ID of the official. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -15058,14 +17299,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/rankings/sport/17/teams" \
+    --get "http://localhost:8000/api/rankings/sport/1/teams" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/rankings/sport/17/teams"
+    "http://localhost:8000/api/rankings/sport/1/teams"
 );
 
 const headers = {
@@ -15175,10 +17416,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sportId"                data-endpoint="GETapi-rankings-sport--sportId--teams"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -15195,14 +17436,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/rankings/sport/17/individuals" \
+    --get "http://localhost:8000/api/rankings/sport/1/individuals" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/rankings/sport/17/individuals"
+    "http://localhost:8000/api/rankings/sport/1/individuals"
 );
 
 const headers = {
@@ -15312,10 +17553,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sportId"                data-endpoint="GETapi-rankings-sport--sportId--individuals"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -15565,14 +17806,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/rankings/sport/17/statistics" \
+    --get "http://localhost:8000/api/rankings/sport/1/statistics" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/rankings/sport/17/statistics"
+    "http://localhost:8000/api/rankings/sport/1/statistics"
 );
 
 const headers = {
@@ -15682,10 +17923,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sportId"                data-endpoint="GETapi-rankings-sport--sportId--statistics"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -16312,14 +18553,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/medals/school/17" \
+    --get "http://localhost:8000/api/medals/school/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/medals/school/17"
+    "http://localhost:8000/api/medals/school/1"
 );
 
 const headers = {
@@ -16429,10 +18670,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="schoolId"                data-endpoint="GETapi-medals-school--schoolId-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -16449,14 +18690,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/medals/sport/17" \
+    --get "http://localhost:8000/api/medals/sport/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/medals/sport/17"
+    "http://localhost:8000/api/medals/sport/1"
 );
 
 const headers = {
@@ -16566,10 +18807,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sportId"                data-endpoint="GETapi-medals-sport--sportId-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -17708,14 +19949,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/results/sport/17" \
+    --get "http://localhost:8000/api/results/sport/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/results/sport/17"
+    "http://localhost:8000/api/results/sport/1"
 );
 
 const headers = {
@@ -17825,10 +20066,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sportId"                data-endpoint="GETapi-results-sport--sportId-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -18597,14 +20838,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/tournaments/sport/17" \
+    --get "http://localhost:8000/api/tournaments/sport/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tournaments/sport/17"
+    "http://localhost:8000/api/tournaments/sport/1"
 );
 
 const headers = {
@@ -18714,10 +20955,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sportId"                data-endpoint="GETapi-tournaments-sport--sportId-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -19109,14 +21350,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/tournaments/17" \
+    --get "http://localhost:8000/api/tournaments/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tournaments/17"
+    "http://localhost:8000/api/tournaments/1"
 );
 
 const headers = {
@@ -19226,10 +21467,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="tournament_id"                data-endpoint="GETapi-tournaments--tournament_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the tournament. Example: <code>17</code></p>
+<p>The ID of the tournament. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -19246,14 +21487,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/tournaments/17" \
+    "http://localhost:8000/api/tournaments/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tournaments/17"
+    "http://localhost:8000/api/tournaments/1"
 );
 
 const headers = {
@@ -19346,10 +21587,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="tournament_id"                data-endpoint="PUTapi-tournaments--tournament_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the tournament. Example: <code>17</code></p>
+<p>The ID of the tournament. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -19366,14 +21607,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/tournaments/17" \
+    "http://localhost:8000/api/tournaments/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tournaments/17"
+    "http://localhost:8000/api/tournaments/1"
 );
 
 const headers = {
@@ -19466,10 +21707,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="tournament_id"                data-endpoint="DELETEapi-tournaments--tournament_id-"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the tournament. Example: <code>17</code></p>
+<p>The ID of the tournament. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -19486,14 +21727,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/tournaments/17/register" \
+    "http://localhost:8000/api/tournaments/1/register" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tournaments/17/register"
+    "http://localhost:8000/api/tournaments/1/register"
 );
 
 const headers = {
@@ -19586,10 +21827,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="tournament_id"                data-endpoint="POSTapi-tournaments--tournament_id--register"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the tournament. Example: <code>17</code></p>
+<p>The ID of the tournament. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -19606,14 +21847,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PATCH \
-    "http://localhost:8000/api/tournaments/17/status" \
+    "http://localhost:8000/api/tournaments/1/status" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tournaments/17/status"
+    "http://localhost:8000/api/tournaments/1/status"
 );
 
 const headers = {
@@ -19706,10 +21947,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="tournament_id"                data-endpoint="PATCHapi-tournaments--tournament_id--status"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the tournament. Example: <code>17</code></p>
+<p>The ID of the tournament. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -19726,14 +21967,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/tournaments/17/statistics" \
+    --get "http://localhost:8000/api/tournaments/1/statistics" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tournaments/17/statistics"
+    "http://localhost:8000/api/tournaments/1/statistics"
 );
 
 const headers = {
@@ -19843,10 +22084,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="tournament_id"                data-endpoint="GETapi-tournaments--tournament_id--statistics"
-               value="17"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the tournament. Example: <code>17</code></p>
+<p>The ID of the tournament. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -21783,7 +24024,7 @@ access-control-allow-credentials: true
 <code class="language-json" style="max-height: 300px;">{
     &quot;status&quot;: &quot;healthy&quot;,
     &quot;database&quot;: &quot;connected&quot;,
-    &quot;timestamp&quot;: &quot;2025-09-03T09:21:55.907471Z&quot;
+    &quot;timestamp&quot;: &quot;2025-09-21T08:43:38.943302Z&quot;
 }</code>
  </pre>
     </span>
@@ -22108,6 +24349,5210 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         </form>
 
+                    <h2 id="endpoints-GETapi-admin-dashboard-stats">Get dashboard statistics</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-dashboard-stats">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/dashboard/stats" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/dashboard/stats"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-dashboard-stats">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-dashboard-stats" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-dashboard-stats"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-dashboard-stats"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-dashboard-stats" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-dashboard-stats">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-dashboard-stats" data-method="GET"
+      data-path="api/admin/dashboard/stats"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-dashboard-stats', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-dashboard-stats"
+                    onclick="tryItOut('GETapi-admin-dashboard-stats');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-dashboard-stats"
+                    onclick="cancelTryOut('GETapi-admin-dashboard-stats');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-dashboard-stats"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/dashboard/stats</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-dashboard-stats"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-dashboard-stats"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-admin-schedules">Admin index - List all schedules with admin features.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-schedules">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/schedules" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/schedules"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-schedules">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-schedules" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-schedules"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-schedules"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-schedules" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-schedules">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-schedules" data-method="GET"
+      data-path="api/admin/schedules"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-schedules', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-schedules"
+                    onclick="tryItOut('GETapi-admin-schedules');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-schedules"
+                    onclick="cancelTryOut('GETapi-admin-schedules');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-schedules"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/schedules</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-schedules"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-schedules"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-admin-schedules-stats">Get admin statistics for schedules.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-schedules-stats">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/schedules/stats" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/schedules/stats"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-schedules-stats">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-schedules-stats" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-schedules-stats"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-schedules-stats"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-schedules-stats" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-schedules-stats">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-schedules-stats" data-method="GET"
+      data-path="api/admin/schedules/stats"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-schedules-stats', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-schedules-stats"
+                    onclick="tryItOut('GETapi-admin-schedules-stats');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-schedules-stats"
+                    onclick="cancelTryOut('GETapi-admin-schedules-stats');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-schedules-stats"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/schedules/stats</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-schedules-stats"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-schedules-stats"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-POSTapi-admin-schedules">Store a newly created resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTapi-admin-schedules">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/api/admin/schedules" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/schedules"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-admin-schedules">
+</span>
+<span id="execution-results-POSTapi-admin-schedules" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-admin-schedules"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-admin-schedules"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-admin-schedules" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-admin-schedules">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-admin-schedules" data-method="POST"
+      data-path="api/admin/schedules"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-admin-schedules', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-admin-schedules"
+                    onclick="tryItOut('POSTapi-admin-schedules');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-admin-schedules"
+                    onclick="cancelTryOut('POSTapi-admin-schedules');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-admin-schedules"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/admin/schedules</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-admin-schedules"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-admin-schedules"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-admin-schedules--schedule_id-">Display the specified resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-schedules--schedule_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/schedules/17" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/schedules/17"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-schedules--schedule_id-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-schedules--schedule_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-schedules--schedule_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-schedules--schedule_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-schedules--schedule_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-schedules--schedule_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-schedules--schedule_id-" data-method="GET"
+      data-path="api/admin/schedules/{schedule_id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-schedules--schedule_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-schedules--schedule_id-"
+                    onclick="tryItOut('GETapi-admin-schedules--schedule_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-schedules--schedule_id-"
+                    onclick="cancelTryOut('GETapi-admin-schedules--schedule_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-schedules--schedule_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/schedules/{schedule_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-schedules--schedule_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-schedules--schedule_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>schedule_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="schedule_id"                data-endpoint="GETapi-admin-schedules--schedule_id-"
+               value="17"
+               data-component="url">
+    <br>
+<p>The ID of the schedule. Example: <code>17</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-PUTapi-admin-schedules--schedule_id-">Update the specified resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTapi-admin-schedules--schedule_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost:8000/api/admin/schedules/17" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/schedules/17"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTapi-admin-schedules--schedule_id-">
+</span>
+<span id="execution-results-PUTapi-admin-schedules--schedule_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-admin-schedules--schedule_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-admin-schedules--schedule_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PUTapi-admin-schedules--schedule_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-admin-schedules--schedule_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PUTapi-admin-schedules--schedule_id-" data-method="PUT"
+      data-path="api/admin/schedules/{schedule_id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-admin-schedules--schedule_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-admin-schedules--schedule_id-"
+                    onclick="tryItOut('PUTapi-admin-schedules--schedule_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-admin-schedules--schedule_id-"
+                    onclick="cancelTryOut('PUTapi-admin-schedules--schedule_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-admin-schedules--schedule_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/admin/schedules/{schedule_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PUTapi-admin-schedules--schedule_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PUTapi-admin-schedules--schedule_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>schedule_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="schedule_id"                data-endpoint="PUTapi-admin-schedules--schedule_id-"
+               value="17"
+               data-component="url">
+    <br>
+<p>The ID of the schedule. Example: <code>17</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-DELETEapi-admin-schedules--schedule_id-">Remove the specified resource from storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-admin-schedules--schedule_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost:8000/api/admin/schedules/17" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/schedules/17"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-admin-schedules--schedule_id-">
+</span>
+<span id="execution-results-DELETEapi-admin-schedules--schedule_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-admin-schedules--schedule_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-admin-schedules--schedule_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-admin-schedules--schedule_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-admin-schedules--schedule_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-admin-schedules--schedule_id-" data-method="DELETE"
+      data-path="api/admin/schedules/{schedule_id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-admin-schedules--schedule_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-admin-schedules--schedule_id-"
+                    onclick="tryItOut('DELETEapi-admin-schedules--schedule_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-admin-schedules--schedule_id-"
+                    onclick="cancelTryOut('DELETEapi-admin-schedules--schedule_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-admin-schedules--schedule_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/admin/schedules/{schedule_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-admin-schedules--schedule_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-admin-schedules--schedule_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>schedule_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="schedule_id"                data-endpoint="DELETEapi-admin-schedules--schedule_id-"
+               value="17"
+               data-component="url">
+    <br>
+<p>The ID of the schedule. Example: <code>17</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-PATCHapi-admin-schedules--schedule_id--status">Update schedule status.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PATCHapi-admin-schedules--schedule_id--status">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PATCH \
+    "http://localhost:8000/api/admin/schedules/17/status" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/schedules/17/status"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "PATCH",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PATCHapi-admin-schedules--schedule_id--status">
+</span>
+<span id="execution-results-PATCHapi-admin-schedules--schedule_id--status" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PATCHapi-admin-schedules--schedule_id--status"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PATCHapi-admin-schedules--schedule_id--status"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PATCHapi-admin-schedules--schedule_id--status" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PATCHapi-admin-schedules--schedule_id--status">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PATCHapi-admin-schedules--schedule_id--status" data-method="PATCH"
+      data-path="api/admin/schedules/{schedule_id}/status"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PATCHapi-admin-schedules--schedule_id--status', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PATCHapi-admin-schedules--schedule_id--status"
+                    onclick="tryItOut('PATCHapi-admin-schedules--schedule_id--status');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PATCHapi-admin-schedules--schedule_id--status"
+                    onclick="cancelTryOut('PATCHapi-admin-schedules--schedule_id--status');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PATCHapi-admin-schedules--schedule_id--status"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-purple">PATCH</small>
+            <b><code>api/admin/schedules/{schedule_id}/status</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PATCHapi-admin-schedules--schedule_id--status"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PATCHapi-admin-schedules--schedule_id--status"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>schedule_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="schedule_id"                data-endpoint="PATCHapi-admin-schedules--schedule_id--status"
+               value="17"
+               data-component="url">
+    <br>
+<p>The ID of the schedule. Example: <code>17</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-admin-profiles">GET api/admin/profiles</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-profiles">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/profiles" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/profiles"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-profiles">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-profiles" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-profiles"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-profiles"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-profiles" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-profiles">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-profiles" data-method="GET"
+      data-path="api/admin/profiles"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-profiles', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-profiles"
+                    onclick="tryItOut('GETapi-admin-profiles');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-profiles"
+                    onclick="cancelTryOut('GETapi-admin-profiles');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-profiles"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/profiles</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-profiles"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-profiles"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-admin-profiles-stats">Get user statistics for admin dashboard</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-profiles-stats">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/profiles/stats" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/profiles/stats"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-profiles-stats">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-profiles-stats" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-profiles-stats"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-profiles-stats"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-profiles-stats" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-profiles-stats">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-profiles-stats" data-method="GET"
+      data-path="api/admin/profiles/stats"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-profiles-stats', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-profiles-stats"
+                    onclick="tryItOut('GETapi-admin-profiles-stats');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-profiles-stats"
+                    onclick="cancelTryOut('GETapi-admin-profiles-stats');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-profiles-stats"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/profiles/stats</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-profiles-stats"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-profiles-stats"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-POSTapi-admin-profiles">Store a newly created resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTapi-admin-profiles">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/api/admin/profiles" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/profiles"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-admin-profiles">
+</span>
+<span id="execution-results-POSTapi-admin-profiles" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-admin-profiles"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-admin-profiles"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-admin-profiles" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-admin-profiles">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-admin-profiles" data-method="POST"
+      data-path="api/admin/profiles"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-admin-profiles', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-admin-profiles"
+                    onclick="tryItOut('POSTapi-admin-profiles');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-admin-profiles"
+                    onclick="cancelTryOut('POSTapi-admin-profiles');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-admin-profiles"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/admin/profiles</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-admin-profiles"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-admin-profiles"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-admin-profiles--user-">Display the specified resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-profiles--user-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/profiles/consequatur" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/profiles/consequatur"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-profiles--user-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-profiles--user-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-profiles--user-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-profiles--user-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-profiles--user-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-profiles--user-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-profiles--user-" data-method="GET"
+      data-path="api/admin/profiles/{user}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-profiles--user-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-profiles--user-"
+                    onclick="tryItOut('GETapi-admin-profiles--user-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-profiles--user-"
+                    onclick="cancelTryOut('GETapi-admin-profiles--user-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-profiles--user-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/profiles/{user}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-profiles--user-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-profiles--user-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>user</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="user"                data-endpoint="GETapi-admin-profiles--user-"
+               value="consequatur"
+               data-component="url">
+    <br>
+<p>Example: <code>consequatur</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-PUTapi-admin-profiles--user-">Update the specified resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTapi-admin-profiles--user-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost:8000/api/admin/profiles/consequatur" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/profiles/consequatur"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTapi-admin-profiles--user-">
+</span>
+<span id="execution-results-PUTapi-admin-profiles--user-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-admin-profiles--user-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-admin-profiles--user-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PUTapi-admin-profiles--user-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-admin-profiles--user-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PUTapi-admin-profiles--user-" data-method="PUT"
+      data-path="api/admin/profiles/{user}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-admin-profiles--user-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-admin-profiles--user-"
+                    onclick="tryItOut('PUTapi-admin-profiles--user-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-admin-profiles--user-"
+                    onclick="cancelTryOut('PUTapi-admin-profiles--user-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-admin-profiles--user-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/admin/profiles/{user}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PUTapi-admin-profiles--user-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PUTapi-admin-profiles--user-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>user</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="user"                data-endpoint="PUTapi-admin-profiles--user-"
+               value="consequatur"
+               data-component="url">
+    <br>
+<p>Example: <code>consequatur</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-DELETEapi-admin-profiles--type---user-">Remove the specified resource from storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-admin-profiles--type---user-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost:8000/api/admin/profiles/consequatur/consequatur" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/profiles/consequatur/consequatur"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-admin-profiles--type---user-">
+</span>
+<span id="execution-results-DELETEapi-admin-profiles--type---user-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-admin-profiles--type---user-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-admin-profiles--type---user-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-admin-profiles--type---user-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-admin-profiles--type---user-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-admin-profiles--type---user-" data-method="DELETE"
+      data-path="api/admin/profiles/{type}/{user}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-admin-profiles--type---user-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-admin-profiles--type---user-"
+                    onclick="tryItOut('DELETEapi-admin-profiles--type---user-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-admin-profiles--type---user-"
+                    onclick="cancelTryOut('DELETEapi-admin-profiles--type---user-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-admin-profiles--type---user-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/admin/profiles/{type}/{user}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-admin-profiles--type---user-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-admin-profiles--type---user-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>type</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="type"                data-endpoint="DELETEapi-admin-profiles--type---user-"
+               value="consequatur"
+               data-component="url">
+    <br>
+<p>Example: <code>consequatur</code></p>
+            </div>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>user</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="user"                data-endpoint="DELETEapi-admin-profiles--type---user-"
+               value="consequatur"
+               data-component="url">
+    <br>
+<p>Example: <code>consequatur</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-admin-tournaments">Admin listing for tournaments (paginated)</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-tournaments">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/tournaments" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/tournaments"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-tournaments">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-tournaments" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-tournaments"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-tournaments"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-tournaments" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-tournaments">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-tournaments" data-method="GET"
+      data-path="api/admin/tournaments"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-tournaments', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-tournaments"
+                    onclick="tryItOut('GETapi-admin-tournaments');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-tournaments"
+                    onclick="cancelTryOut('GETapi-admin-tournaments');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-tournaments"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/tournaments</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-tournaments"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-tournaments"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-POSTapi-admin-tournaments">Store a newly created resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTapi-admin-tournaments">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/api/admin/tournaments" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/tournaments"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-admin-tournaments">
+</span>
+<span id="execution-results-POSTapi-admin-tournaments" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-admin-tournaments"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-admin-tournaments"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-admin-tournaments" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-admin-tournaments">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-admin-tournaments" data-method="POST"
+      data-path="api/admin/tournaments"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-admin-tournaments', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-admin-tournaments"
+                    onclick="tryItOut('POSTapi-admin-tournaments');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-admin-tournaments"
+                    onclick="cancelTryOut('POSTapi-admin-tournaments');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-admin-tournaments"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/admin/tournaments</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-admin-tournaments"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-admin-tournaments"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-admin-tournaments--tournament_id-">Display the specified resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-tournaments--tournament_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/tournaments/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/tournaments/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-tournaments--tournament_id-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-tournaments--tournament_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-tournaments--tournament_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-tournaments--tournament_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-tournaments--tournament_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-tournaments--tournament_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-tournaments--tournament_id-" data-method="GET"
+      data-path="api/admin/tournaments/{tournament_id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-tournaments--tournament_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-tournaments--tournament_id-"
+                    onclick="tryItOut('GETapi-admin-tournaments--tournament_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-tournaments--tournament_id-"
+                    onclick="cancelTryOut('GETapi-admin-tournaments--tournament_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-tournaments--tournament_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/tournaments/{tournament_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-tournaments--tournament_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-tournaments--tournament_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>tournament_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="tournament_id"                data-endpoint="GETapi-admin-tournaments--tournament_id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the tournament. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-PUTapi-admin-tournaments--tournament_id-">Update the specified resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTapi-admin-tournaments--tournament_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost:8000/api/admin/tournaments/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/tournaments/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTapi-admin-tournaments--tournament_id-">
+</span>
+<span id="execution-results-PUTapi-admin-tournaments--tournament_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-admin-tournaments--tournament_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-admin-tournaments--tournament_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PUTapi-admin-tournaments--tournament_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-admin-tournaments--tournament_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PUTapi-admin-tournaments--tournament_id-" data-method="PUT"
+      data-path="api/admin/tournaments/{tournament_id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-admin-tournaments--tournament_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-admin-tournaments--tournament_id-"
+                    onclick="tryItOut('PUTapi-admin-tournaments--tournament_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-admin-tournaments--tournament_id-"
+                    onclick="cancelTryOut('PUTapi-admin-tournaments--tournament_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-admin-tournaments--tournament_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/admin/tournaments/{tournament_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PUTapi-admin-tournaments--tournament_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PUTapi-admin-tournaments--tournament_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>tournament_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="tournament_id"                data-endpoint="PUTapi-admin-tournaments--tournament_id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the tournament. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-DELETEapi-admin-tournaments--tournament_id-">Remove the specified resource from storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-admin-tournaments--tournament_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost:8000/api/admin/tournaments/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/tournaments/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-admin-tournaments--tournament_id-">
+</span>
+<span id="execution-results-DELETEapi-admin-tournaments--tournament_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-admin-tournaments--tournament_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-admin-tournaments--tournament_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-admin-tournaments--tournament_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-admin-tournaments--tournament_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-admin-tournaments--tournament_id-" data-method="DELETE"
+      data-path="api/admin/tournaments/{tournament_id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-admin-tournaments--tournament_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-admin-tournaments--tournament_id-"
+                    onclick="tryItOut('DELETEapi-admin-tournaments--tournament_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-admin-tournaments--tournament_id-"
+                    onclick="cancelTryOut('DELETEapi-admin-tournaments--tournament_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-admin-tournaments--tournament_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/admin/tournaments/{tournament_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-admin-tournaments--tournament_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-admin-tournaments--tournament_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>tournament_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="tournament_id"                data-endpoint="DELETEapi-admin-tournaments--tournament_id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the tournament. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-PATCHapi-admin-tournaments--tournament_id--status">Update tournament status.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PATCHapi-admin-tournaments--tournament_id--status">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PATCH \
+    "http://localhost:8000/api/admin/tournaments/1/status" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/tournaments/1/status"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "PATCH",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PATCHapi-admin-tournaments--tournament_id--status">
+</span>
+<span id="execution-results-PATCHapi-admin-tournaments--tournament_id--status" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PATCHapi-admin-tournaments--tournament_id--status"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PATCHapi-admin-tournaments--tournament_id--status"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PATCHapi-admin-tournaments--tournament_id--status" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PATCHapi-admin-tournaments--tournament_id--status">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PATCHapi-admin-tournaments--tournament_id--status" data-method="PATCH"
+      data-path="api/admin/tournaments/{tournament_id}/status"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PATCHapi-admin-tournaments--tournament_id--status', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PATCHapi-admin-tournaments--tournament_id--status"
+                    onclick="tryItOut('PATCHapi-admin-tournaments--tournament_id--status');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PATCHapi-admin-tournaments--tournament_id--status"
+                    onclick="cancelTryOut('PATCHapi-admin-tournaments--tournament_id--status');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PATCHapi-admin-tournaments--tournament_id--status"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-purple">PATCH</small>
+            <b><code>api/admin/tournaments/{tournament_id}/status</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PATCHapi-admin-tournaments--tournament_id--status"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PATCHapi-admin-tournaments--tournament_id--status"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>tournament_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="tournament_id"                data-endpoint="PATCHapi-admin-tournaments--tournament_id--status"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the tournament. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-admin-sports">Get all sports for admin management</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-sports">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/sports" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/sports"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-sports">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-sports" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-sports"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-sports"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-sports" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-sports">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-sports" data-method="GET"
+      data-path="api/admin/sports"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-sports', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-sports"
+                    onclick="tryItOut('GETapi-admin-sports');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-sports"
+                    onclick="cancelTryOut('GETapi-admin-sports');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-sports"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/sports</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-sports"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-sports"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-admin-sports-stats">Get sports statistics for admin dashboard</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-sports-stats">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/sports/stats" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/sports/stats"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-sports-stats">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-sports-stats" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-sports-stats"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-sports-stats"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-sports-stats" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-sports-stats">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-sports-stats" data-method="GET"
+      data-path="api/admin/sports/stats"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-sports-stats', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-sports-stats"
+                    onclick="tryItOut('GETapi-admin-sports-stats');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-sports-stats"
+                    onclick="cancelTryOut('GETapi-admin-sports-stats');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-sports-stats"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/sports/stats</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-sports-stats"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-sports-stats"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-POSTapi-admin-sports">Store a newly created resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTapi-admin-sports">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/api/admin/sports" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/sports"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-admin-sports">
+</span>
+<span id="execution-results-POSTapi-admin-sports" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-admin-sports"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-admin-sports"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-admin-sports" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-admin-sports">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-admin-sports" data-method="POST"
+      data-path="api/admin/sports"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-admin-sports', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-admin-sports"
+                    onclick="tryItOut('POSTapi-admin-sports');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-admin-sports"
+                    onclick="cancelTryOut('POSTapi-admin-sports');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-admin-sports"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/admin/sports</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-admin-sports"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-admin-sports"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-admin-sports--sport_id-">Display the specified resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-sports--sport_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/sports/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/sports/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-sports--sport_id-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-sports--sport_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-sports--sport_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-sports--sport_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-sports--sport_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-sports--sport_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-sports--sport_id-" data-method="GET"
+      data-path="api/admin/sports/{sport_id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-sports--sport_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-sports--sport_id-"
+                    onclick="tryItOut('GETapi-admin-sports--sport_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-sports--sport_id-"
+                    onclick="cancelTryOut('GETapi-admin-sports--sport_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-sports--sport_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/sports/{sport_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-sports--sport_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-sports--sport_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>sport_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="sport_id"                data-endpoint="GETapi-admin-sports--sport_id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the sport. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-PUTapi-admin-sports--sport_id-">Update the specified resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTapi-admin-sports--sport_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost:8000/api/admin/sports/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/sports/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTapi-admin-sports--sport_id-">
+</span>
+<span id="execution-results-PUTapi-admin-sports--sport_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-admin-sports--sport_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-admin-sports--sport_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PUTapi-admin-sports--sport_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-admin-sports--sport_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PUTapi-admin-sports--sport_id-" data-method="PUT"
+      data-path="api/admin/sports/{sport_id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-admin-sports--sport_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-admin-sports--sport_id-"
+                    onclick="tryItOut('PUTapi-admin-sports--sport_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-admin-sports--sport_id-"
+                    onclick="cancelTryOut('PUTapi-admin-sports--sport_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-admin-sports--sport_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/admin/sports/{sport_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PUTapi-admin-sports--sport_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PUTapi-admin-sports--sport_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>sport_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="sport_id"                data-endpoint="PUTapi-admin-sports--sport_id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the sport. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-DELETEapi-admin-sports--sport_id-">Remove the specified resource from storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-admin-sports--sport_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost:8000/api/admin/sports/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/sports/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-admin-sports--sport_id-">
+</span>
+<span id="execution-results-DELETEapi-admin-sports--sport_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-admin-sports--sport_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-admin-sports--sport_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-admin-sports--sport_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-admin-sports--sport_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-admin-sports--sport_id-" data-method="DELETE"
+      data-path="api/admin/sports/{sport_id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-admin-sports--sport_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-admin-sports--sport_id-"
+                    onclick="tryItOut('DELETEapi-admin-sports--sport_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-admin-sports--sport_id-"
+                    onclick="cancelTryOut('DELETEapi-admin-sports--sport_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-admin-sports--sport_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/admin/sports/{sport_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-admin-sports--sport_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-admin-sports--sport_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>sport_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="sport_id"                data-endpoint="DELETEapi-admin-sports--sport_id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the sport. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-PATCHapi-admin-sports--sport_id--status">Update sport status</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PATCHapi-admin-sports--sport_id--status">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PATCH \
+    "http://localhost:8000/api/admin/sports/1/status" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/sports/1/status"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "PATCH",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PATCHapi-admin-sports--sport_id--status">
+</span>
+<span id="execution-results-PATCHapi-admin-sports--sport_id--status" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PATCHapi-admin-sports--sport_id--status"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PATCHapi-admin-sports--sport_id--status"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PATCHapi-admin-sports--sport_id--status" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PATCHapi-admin-sports--sport_id--status">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PATCHapi-admin-sports--sport_id--status" data-method="PATCH"
+      data-path="api/admin/sports/{sport_id}/status"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PATCHapi-admin-sports--sport_id--status', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PATCHapi-admin-sports--sport_id--status"
+                    onclick="tryItOut('PATCHapi-admin-sports--sport_id--status');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PATCHapi-admin-sports--sport_id--status"
+                    onclick="cancelTryOut('PATCHapi-admin-sports--sport_id--status');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PATCHapi-admin-sports--sport_id--status"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-purple">PATCH</small>
+            <b><code>api/admin/sports/{sport_id}/status</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PATCHapi-admin-sports--sport_id--status"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PATCHapi-admin-sports--sport_id--status"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>sport_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="sport_id"                data-endpoint="PATCHapi-admin-sports--sport_id--status"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the sport. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-admin-sports-category--category-">Get sports by category.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-sports-category--category-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/sports/category/consequatur" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/sports/category/consequatur"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-sports-category--category-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-sports-category--category-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-sports-category--category-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-sports-category--category-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-sports-category--category-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-sports-category--category-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-sports-category--category-" data-method="GET"
+      data-path="api/admin/sports/category/{category}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-sports-category--category-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-sports-category--category-"
+                    onclick="tryItOut('GETapi-admin-sports-category--category-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-sports-category--category-"
+                    onclick="cancelTryOut('GETapi-admin-sports-category--category-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-sports-category--category-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/sports/category/{category}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-sports-category--category-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-sports-category--category-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>category</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="category"                data-endpoint="GETapi-admin-sports-category--category-"
+               value="consequatur"
+               data-component="url">
+    <br>
+<p>The category. Example: <code>consequatur</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-admin-venues">Get all venues for admin management</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-venues">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/venues" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/venues"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-venues">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-venues" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-venues"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-venues"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-venues" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-venues">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-venues" data-method="GET"
+      data-path="api/admin/venues"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-venues', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-venues"
+                    onclick="tryItOut('GETapi-admin-venues');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-venues"
+                    onclick="cancelTryOut('GETapi-admin-venues');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-venues"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/venues</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-venues"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-venues"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-admin-venues-stats">Get venue statistics for admin dashboard</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-venues-stats">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/venues/stats" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/venues/stats"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-venues-stats">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-venues-stats" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-venues-stats"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-venues-stats"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-venues-stats" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-venues-stats">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-venues-stats" data-method="GET"
+      data-path="api/admin/venues/stats"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-venues-stats', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-venues-stats"
+                    onclick="tryItOut('GETapi-admin-venues-stats');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-venues-stats"
+                    onclick="cancelTryOut('GETapi-admin-venues-stats');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-venues-stats"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/venues/stats</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-venues-stats"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-venues-stats"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-POSTapi-admin-venues">Store a newly created resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTapi-admin-venues">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/api/admin/venues" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/venues"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-admin-venues">
+</span>
+<span id="execution-results-POSTapi-admin-venues" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-admin-venues"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-admin-venues"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-admin-venues" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-admin-venues">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-admin-venues" data-method="POST"
+      data-path="api/admin/venues"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-admin-venues', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-admin-venues"
+                    onclick="tryItOut('POSTapi-admin-venues');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-admin-venues"
+                    onclick="cancelTryOut('POSTapi-admin-venues');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-admin-venues"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/admin/venues</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-admin-venues"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-admin-venues"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-admin-venues--venue_id-">Display the specified resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-venues--venue_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/venues/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/venues/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-venues--venue_id-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-venues--venue_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-venues--venue_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-venues--venue_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-venues--venue_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-venues--venue_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-venues--venue_id-" data-method="GET"
+      data-path="api/admin/venues/{venue_id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-venues--venue_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-venues--venue_id-"
+                    onclick="tryItOut('GETapi-admin-venues--venue_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-venues--venue_id-"
+                    onclick="cancelTryOut('GETapi-admin-venues--venue_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-venues--venue_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/venues/{venue_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-venues--venue_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-venues--venue_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>venue_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="venue_id"                data-endpoint="GETapi-admin-venues--venue_id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the venue. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-PUTapi-admin-venues--venue_id-">Update the specified resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTapi-admin-venues--venue_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost:8000/api/admin/venues/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/venues/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTapi-admin-venues--venue_id-">
+</span>
+<span id="execution-results-PUTapi-admin-venues--venue_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-admin-venues--venue_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-admin-venues--venue_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PUTapi-admin-venues--venue_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-admin-venues--venue_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PUTapi-admin-venues--venue_id-" data-method="PUT"
+      data-path="api/admin/venues/{venue_id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-admin-venues--venue_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-admin-venues--venue_id-"
+                    onclick="tryItOut('PUTapi-admin-venues--venue_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-admin-venues--venue_id-"
+                    onclick="cancelTryOut('PUTapi-admin-venues--venue_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-admin-venues--venue_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/admin/venues/{venue_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PUTapi-admin-venues--venue_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PUTapi-admin-venues--venue_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>venue_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="venue_id"                data-endpoint="PUTapi-admin-venues--venue_id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the venue. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-DELETEapi-admin-venues--venue_id-">Remove the specified resource from storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-admin-venues--venue_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost:8000/api/admin/venues/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/venues/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-admin-venues--venue_id-">
+</span>
+<span id="execution-results-DELETEapi-admin-venues--venue_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-admin-venues--venue_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-admin-venues--venue_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-admin-venues--venue_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-admin-venues--venue_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-admin-venues--venue_id-" data-method="DELETE"
+      data-path="api/admin/venues/{venue_id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-admin-venues--venue_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-admin-venues--venue_id-"
+                    onclick="tryItOut('DELETEapi-admin-venues--venue_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-admin-venues--venue_id-"
+                    onclick="cancelTryOut('DELETEapi-admin-venues--venue_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-admin-venues--venue_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/admin/venues/{venue_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-admin-venues--venue_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-admin-venues--venue_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>venue_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="venue_id"                data-endpoint="DELETEapi-admin-venues--venue_id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the venue. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-admin-venues-region--region-">Get venues by region.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-venues-region--region-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/venues/region/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/venues/region/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-venues-region--region-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-venues-region--region-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-venues-region--region-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-venues-region--region-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-venues-region--region-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-venues-region--region-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-venues-region--region-" data-method="GET"
+      data-path="api/admin/venues/region/{region}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-venues-region--region-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-venues-region--region-"
+                    onclick="tryItOut('GETapi-admin-venues-region--region-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-venues-region--region-"
+                    onclick="cancelTryOut('GETapi-admin-venues-region--region-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-venues-region--region-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/venues/region/{region}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-venues-region--region-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-venues-region--region-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>region</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="region"                data-endpoint="GETapi-admin-venues-region--region-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The region. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-admin-regions">Display a listing of the resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-regions">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/regions" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/regions"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-regions">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-regions" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-regions"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-regions"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-regions" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-regions">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-regions" data-method="GET"
+      data-path="api/admin/regions"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-regions', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-regions"
+                    onclick="tryItOut('GETapi-admin-regions');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-regions"
+                    onclick="cancelTryOut('GETapi-admin-regions');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-regions"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/regions</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-regions"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-regions"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-POSTapi-admin-regions">Store a newly created resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTapi-admin-regions">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/api/admin/regions" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/regions"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-admin-regions">
+</span>
+<span id="execution-results-POSTapi-admin-regions" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-admin-regions"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-admin-regions"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-admin-regions" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-admin-regions">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-admin-regions" data-method="POST"
+      data-path="api/admin/regions"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-admin-regions', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-admin-regions"
+                    onclick="tryItOut('POSTapi-admin-regions');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-admin-regions"
+                    onclick="cancelTryOut('POSTapi-admin-regions');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-admin-regions"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/admin/regions</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-admin-regions"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-admin-regions"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-admin-regions--region_id-">Display the specified resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-regions--region_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/regions/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/regions/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-regions--region_id-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-regions--region_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-regions--region_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-regions--region_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-regions--region_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-regions--region_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-regions--region_id-" data-method="GET"
+      data-path="api/admin/regions/{region_id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-regions--region_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-regions--region_id-"
+                    onclick="tryItOut('GETapi-admin-regions--region_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-regions--region_id-"
+                    onclick="cancelTryOut('GETapi-admin-regions--region_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-regions--region_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/regions/{region_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-regions--region_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-regions--region_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>region_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="region_id"                data-endpoint="GETapi-admin-regions--region_id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the region. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-PUTapi-admin-regions--region_id-">Update the specified resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTapi-admin-regions--region_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost:8000/api/admin/regions/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/regions/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTapi-admin-regions--region_id-">
+</span>
+<span id="execution-results-PUTapi-admin-regions--region_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-admin-regions--region_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-admin-regions--region_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PUTapi-admin-regions--region_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-admin-regions--region_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PUTapi-admin-regions--region_id-" data-method="PUT"
+      data-path="api/admin/regions/{region_id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-admin-regions--region_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-admin-regions--region_id-"
+                    onclick="tryItOut('PUTapi-admin-regions--region_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-admin-regions--region_id-"
+                    onclick="cancelTryOut('PUTapi-admin-regions--region_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-admin-regions--region_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/admin/regions/{region_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PUTapi-admin-regions--region_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PUTapi-admin-regions--region_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>region_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="region_id"                data-endpoint="PUTapi-admin-regions--region_id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the region. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-DELETEapi-admin-regions--region_id-">Remove the specified resource from storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-admin-regions--region_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost:8000/api/admin/regions/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/regions/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-admin-regions--region_id-">
+</span>
+<span id="execution-results-DELETEapi-admin-regions--region_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-admin-regions--region_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-admin-regions--region_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-admin-regions--region_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-admin-regions--region_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-admin-regions--region_id-" data-method="DELETE"
+      data-path="api/admin/regions/{region_id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-admin-regions--region_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-admin-regions--region_id-"
+                    onclick="tryItOut('DELETEapi-admin-regions--region_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-admin-regions--region_id-"
+                    onclick="cancelTryOut('DELETEapi-admin-regions--region_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-admin-regions--region_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/admin/regions/{region_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-admin-regions--region_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-admin-regions--region_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>region_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="region_id"                data-endpoint="DELETEapi-admin-regions--region_id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the region. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-admin-regions-status--status-">Get regions by status.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-regions-status--status-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/regions/status/consequatur" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/regions/status/consequatur"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-regions-status--status-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-regions-status--status-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-regions-status--status-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-regions-status--status-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-regions-status--status-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-regions-status--status-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-regions-status--status-" data-method="GET"
+      data-path="api/admin/regions/status/{status}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-regions-status--status-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-regions-status--status-"
+                    onclick="tryItOut('GETapi-admin-regions-status--status-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-regions-status--status-"
+                    onclick="cancelTryOut('GETapi-admin-regions-status--status-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-regions-status--status-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/regions/status/{status}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-regions-status--status-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-regions-status--status-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="status"                data-endpoint="GETapi-admin-regions-status--status-"
+               value="consequatur"
+               data-component="url">
+    <br>
+<p>The status. Example: <code>consequatur</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-admin-regions--region_id--statistics">Get region statistics.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-admin-regions--region_id--statistics">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/admin/regions/1/statistics" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/admin/regions/1/statistics"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-admin-regions--region_id--statistics">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-admin-regions--region_id--statistics" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-admin-regions--region_id--statistics"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-regions--region_id--statistics"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-admin-regions--region_id--statistics" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-regions--region_id--statistics">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-admin-regions--region_id--statistics" data-method="GET"
+      data-path="api/admin/regions/{region_id}/statistics"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-regions--region_id--statistics', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-admin-regions--region_id--statistics"
+                    onclick="tryItOut('GETapi-admin-regions--region_id--statistics');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-admin-regions--region_id--statistics"
+                    onclick="cancelTryOut('GETapi-admin-regions--region_id--statistics');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-admin-regions--region_id--statistics"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/admin/regions/{region_id}/statistics</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-admin-regions--region_id--statistics"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-admin-regions--region_id--statistics"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>region_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="region_id"                data-endpoint="GETapi-admin-regions--region_id--statistics"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the region. Example: <code>1</code></p>
+            </div>
+                    </form>
+
                     <h2 id="endpoints-GETapi-documentation">GET api/documentation</h2>
 
 <p>
@@ -22155,7 +29600,7 @@ fetch(url, {
 content-type: application/json
 access-control-allow-origin: http://localhost:3000
 access-control-allow-credentials: true
-set-cookie: XSRF-TOKEN=eyJpdiI6IkdZcUZ3Vi9NVW81aENUMkxrc0pLM0E9PSIsInZhbHVlIjoiZk5NZTRZeS9ZU08ydTl1UEhHZ0xnVzUrUDdVd0JpWVJVMlJLNHd3MjNBR0ZqbCtpalN3Z1FJc0tMUVNKeUNIZ2pSZWJsdkJRd1BVN05LMXVjRmNJWHZOSGdVOE5nZ2FkODIybU5ud0FaK201cW5USWVZQ2o4V0hSVkVKVVdkNm4iLCJtYWMiOiI0MTI1ODZlMzM2MjI4NzA3MzA3Y2VlZDBlMzI0MzNjMDJjY2QwN2E5Mzk0NmJjMjY1MDViZjA3NWYzYWY3ZThmIiwidGFnIjoiIn0%3D; expires=Wed, 03 Sep 2025 11:21:55 GMT; Max-Age=7200; path=/; samesite=lax; prisaa_sports_management_system_session=eyJpdiI6Ikt5aEQwMEwvSGh4eERGY3lyblZCOXc9PSIsInZhbHVlIjoiaEJsYWNkbmtiZGRuVG9Eb2VYQ21qdExzNUtQNGxrOGQzM0dsd3hkS2pDR3J6SEZ1Nnk2L2t4dTNrSnJZb2JFOHRLbnFyUUNaR1FaQWdnMTVZVlYxUFVqZWdXWEFPN0xvZjRVYWIzaXpaZ1dJZFpUT0dmbVdocWRnazU3RDBXNUYiLCJtYWMiOiI0YjE4MWUyMGFiYTUyMzgzYzY5NDIxMzRlYjlhOTg4M2QwZThlOTJkYjQyMDUyOTc4ZDhlYzY3OTA2OTA4Y2IwIiwidGFnIjoiIn0%3D; expires=Wed, 03 Sep 2025 11:21:55 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: XSRF-TOKEN=eyJpdiI6ImVEWENUOG1MN2F5T3BMSWp5R0lVOHc9PSIsInZhbHVlIjoieG1RYjdTZDl1RDJmLzR0YVRSNVVabXlVbi8xZUlPZG1xQlFJbDV1M3FnYzFCOC9rMUVEQ3FOSHZSaXRSaU5SQ1ZucERwYUFoQTcvWFV0cHpCSmd5VUFpci8rQ1YvbWRKNzQveW82djNuc2w0WVcrdndXTnRIL1ZYYmFoYzVZa3EiLCJtYWMiOiI2MThkNTI5YTNkYjFhNmE1ZmM5YjdjOGVjZjYzZGUxZWVjNjhkOTZmMjBlMTQzMDUzZWVjZTFkM2FlMDBjNzkwIiwidGFnIjoiIn0%3D; expires=Sun, 21 Sep 2025 10:43:39 GMT; Max-Age=7200; path=/; samesite=lax; prisaa_sports_management_system_session=eyJpdiI6IiswT1RGTnJUbWtBZWpiOXVPNVBLTFE9PSIsInZhbHVlIjoiQkxEUkJZb2JBNnZGcWczb2I5c3ZWcndYSythM3V1cnp4K3JqTXBBdGo0LzQ1b2hsS1NPZWhnQTZCNFVGdURtMHIvd1VMTmJDSDBWUllKanBxbEY0dno2ZXdGTVplNlpqKzF4TndWOUdMdXRCeXhHVFJaYkdvMURUakNZaU9YN1kiLCJtYWMiOiJmYmRkOWY1M2MzYmNhMGQ4OTJhODM5MDNjMzJiNGY4OGFjYjUwZTcwNWYwZWFiNmM0NzYwYjJlNzg4YWI2MzYyIiwidGFnIjoiIn0%3D; expires=Sun, 21 Sep 2025 10:43:39 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -22332,7 +29777,7 @@ fetch(url, {
 cache-control: no-cache, private
 access-control-allow-origin: http://localhost:3000
 access-control-allow-credentials: true
-set-cookie: XSRF-TOKEN=eyJpdiI6ImkyM3FjdGdLaWxwUklIMmltVk5xS0E9PSIsInZhbHVlIjoicWhOUlZmWmhRNWFPVjgwejVqTXNYbmszTkVISEpnS1h4VkRqaE5kTldXOUdIcWxWcUFuRHFHdVd5cFZDYjZxL2tXSmdSVzloSTIvNERMdDh6Yk1ucE5yR1lVN2tvemo0S2wxK2llWmwxRFoxNFVWL1Q1U0d5aVNnaXhyM2hpK2UiLCJtYWMiOiIyYTgxZGFlMTZlZWI1MzU0OTlmNzVlY2VmM2MzYWI4ZjNhOGIyZjVjNzdjYzE2YWNmZDhiNDZlNzE1MmQ0MmM2IiwidGFnIjoiIn0%3D; expires=Wed, 03 Sep 2025 11:21:55 GMT; Max-Age=7200; path=/; samesite=lax; prisaa_sports_management_system_session=eyJpdiI6IjYrYzZYMzVkQi90R0pPbE1pZC9RSXc9PSIsInZhbHVlIjoiSWR0aHhmQ003akx5Ky9NVUsxV0h5b1N1V2dyUXp1blJSYUJ6Vm5DZTZUMEh3K25HOUsrYzJoZ25tR2ZzNWR5bWpyN3VFeUdHVTlDYmtQWXhOTnREaG5qc2g1S0VqNXBxZE1abEkrZnJnNTZLVTg0R0JiMFZWOThIdTEvSWRnek8iLCJtYWMiOiJlYmRmZGVlMjczNGIyMDJmODU0MzU0NGJlZGNjMGJmYzUxMTA2Mjg5ZWFmNTFhMGJlYWExNGNhNTc2OTc0MjE1IiwidGFnIjoiIn0%3D; expires=Wed, 03 Sep 2025 11:21:55 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: XSRF-TOKEN=eyJpdiI6IiswL2VyQ1RkWk1CR21WVG8yY2xURnc9PSIsInZhbHVlIjoidkxML2MrMXRrRVpEZnZzKzFKNnF2SmdjamovakdSUXpoQnZtV1Aza2ZIMFZ0OG5IRFlHaG9ZR3BYdHNCRjB0OFhzaStPWkk1bW1XVDB3M29KWTUrNlo2VDcyUXZ4YnNCQXpDdzVhZHg1RU80QmU3WTd3MzI4TXJmUEM2ZmYvR2kiLCJtYWMiOiI4NGQyNWIxNDI5ZGI0OTMyMTFhMDIyMTI4MWIzYzMxMTdiNjEyODczN2JiZGRjY2I5NjQ4YjgxM2JjMjQyNWQ4IiwidGFnIjoiIn0%3D; expires=Sun, 21 Sep 2025 10:43:39 GMT; Max-Age=7200; path=/; samesite=lax; prisaa_sports_management_system_session=eyJpdiI6IkhyR2xtc2ZyeFZNM0pGUlpKSm11VHc9PSIsInZhbHVlIjoiemtKOGNaS244RndxZlJaazlzZnhLcVA4L09iMnJUMHBwL1Q2WlVaUlZhbTJKNUdzeGlJVWlwSk43QVVYWlF2eG8rZTd1WEFBb2tzNG1hZy84cGNoaUIvZmJ3SjJhSS95RVBOU0lJZk9TcDNJNTBJSllKVFJsTEJpYm00Y1ZiaUUiLCJtYWMiOiI4NzMxMzAwNmJmMWFlOGIyYmUwZmY1MzkyNzhmNWM1NWFhZmM5YjNkMmIxODI4NjgzNDJmOGZjZDkyMzM2ZTFlIiwidGFnIjoiIn0%3D; expires=Sun, 21 Sep 2025 10:43:39 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">&lt;!DOCTYPE html&gt;
@@ -23186,7 +30631,7 @@ Response:
 
     &lt;div class=&quot;footer&quot;&gt;
         &lt;p&gt;&lt;strong&gt;PRISAA Management System API Documentation&lt;/strong&gt;&lt;/p&gt;
-        &lt;p&gt;Version 3.0.0 | Generated 2025-09-03 09:21:55&lt;/p&gt;
+        &lt;p&gt;Version 3.0.0 | Generated 2025-09-21 08:43:39&lt;/p&gt;
         &lt;p&gt;Complete API for Private Schools Athletic Association Games Management&lt;/p&gt;
     &lt;/div&gt;
 &lt;/body&gt;

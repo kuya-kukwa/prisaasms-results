@@ -10,10 +10,24 @@ class MedalTally extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['school_id', 'gold', 'silver', 'bronze', 'points'];
+    protected $table = 'standings'; // since migration used "standings"
+
+    protected $fillable = [
+        'school_id',
+        'tournament_id',
+        'gold_count',
+        'silver_count',
+        'bronze_count',
+        'points',
+    ];
 
     public function school()
     {
-        return $this->belongsTo(School::class);
+        return $this->belongsTo(\App\Models\Layer1\School::class);
+    }
+
+    public function tournament()
+    {
+        return $this->belongsTo(\App\Models\Layer1\Tournament::class);
     }
 }

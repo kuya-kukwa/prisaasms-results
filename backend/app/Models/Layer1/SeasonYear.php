@@ -4,13 +4,13 @@ namespace App\Models\Layer1;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use App\Models\Layer1\Tournament;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class SeasonYear extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
-    protected $fillable = ['year'];
+    protected $fillable = ['year', 'active'];
 
     public function tournaments()
     {

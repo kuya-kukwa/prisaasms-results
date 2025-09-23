@@ -2,30 +2,51 @@
 
 namespace App\Models\Layer2;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+
+use App\Models\Layer1\User;
 use App\Models\Layer2\SportSubcategory;
-use App\Models\Layer2\Athlete;
-use App\Models\Layer2\Team;
+use App\Models\Layer2\WeightClass;
 
 class Sport extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
-    protected $fillable = ['name', 'type']; // type: individual, team
+    protected $fillable = [
+        'name',
+        'type',
+        'result_format',
+        'description',
+    ];
 
-    public function subcategories()
+    // -------------------------------
+    // Relationships
+    // -------------------------------
+    public function subcategories(): HasMany
     {
         return $this->hasMany(SportSubcategory::class);
     }
 
-    public function athletes()
+    public function weightClasses(): HasMany
     {
-        return $this->belongsToMany(Athlete::class, 'athlete_sport');
+        return $this->hasMany(WeightClass::class);
     }
 
-    public function teams()
+    /**
+     * Officials assigned to this sport (via pivot table officials_sport).
+     */
+    public function officials(): BelongsToMany
     {
-        return $this->hasMany(Team::class);
+        return $this->belongsToMany(
+            User::class,
+            'officials_sport',  // pivot table
+            'sport_id',         // FK to sports table
+            'official_id'       // FK to users table
+        )->withTimestamps()->withPivot('deleted_at');
     }
 }

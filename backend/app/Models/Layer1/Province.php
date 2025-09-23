@@ -1,15 +1,12 @@
 <?php
-
 namespace App\Models\Layer1;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use App\Models\Layer1\Region;
-use App\Models\Layer1\School;
-
+use Illuminate\Database\Eloquent\SoftDeletes;
 class Province extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     protected $fillable = ['name', 'region_id'];
 

@@ -11,15 +11,28 @@ class Award extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['athlete_id', 'team_id', 'type', 'description'];
+    protected $table = 'player_awards';
+
+    protected $fillable = [
+        'athlete_id',
+        'tournament_id',
+        'match_id',
+        'award_type',
+        'remarks',
+    ];
 
     public function athlete()
     {
-        return $this->belongsTo(Athlete::class);
+        return $this->belongsTo(\App\Models\Layer2\Athlete::class);
     }
 
-    public function team()
+    public function tournament()
     {
-        return $this->belongsTo(Team::class);
+        return $this->belongsTo(\App\Models\Layer1\Tournament::class);
+    }
+
+    public function match()
+    {
+        return $this->belongsTo(\App\Models\Layer3\GameMatch::class);
     }
 }

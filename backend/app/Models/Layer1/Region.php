@@ -4,14 +4,12 @@ namespace App\Models\Layer1;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use App\Models\Layer1\Province;
-use App\Models\Layer1\School;
-
+use Illuminate\Database\Eloquent\SoftDeletes;
 class Region extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
-    protected $fillable = ['name'];
+    protected $fillable = ['name', 'code'];
 
     public function provinces()
     {
@@ -20,6 +18,6 @@ class Region extends Model
 
     public function schools()
     {
-        return $this->hasMany(School::class);
+        return $this->hasManyThrough(School::class, Province::class);
     }
 }
