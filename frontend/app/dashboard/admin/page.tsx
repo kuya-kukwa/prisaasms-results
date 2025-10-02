@@ -56,14 +56,17 @@ function AdminDashboard() {
     }
   };
 
-  useEffect(() => {
-    if (!isAuthenticated) {
-      router.push('/login');
-      return;
-    }
+useEffect(() => {
+  if (!isAuthenticated) {
+    router.push('/login');
+    return;
+  }
 
-    loadDashboardData();
-  }, [isAuthenticated, router]);
+  loadDashboardData();
+
+  // Log activities to debug the structure
+  console.log('Activities:', activities);
+}, [isAuthenticated, router, activities]);
 
   return (
     <div className="flex-1 flex flex-col">
@@ -252,37 +255,44 @@ function AdminDashboard() {
             </CardContent>
         </Card>
         </div>
-
-        {/* Recent Activities */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-base sm:text-lg">Recent Activities</CardTitle>
-          </CardHeader>
-          <CardContent>
-            {activities.length > 0 ? (
-              <div className="space-y-3 sm:space-y-4">
-                {activities.map((activity) => (
-                  <div key={activity.id} className="flex items-start space-x-3 sm:space-x-4">
-                    <Activity className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <div className="flex-1 min-w-0">
-                      <p className="text-sm font-medium">{activity.action}</p>
-                      <p className="text-xs text-muted-foreground">
-                        {activity.description}
-                      </p>
-                    </div>
-                    <div className="text-xs text-muted-foreground flex-shrink-0">
-                      {new Date(activity.timestamp).toLocaleDateString()}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <p className="text-center text-muted-foreground py-4">
-                No recent activities
+        {/* Recent Activities */}<Card>
+  <CardHeader>
+    <CardTitle className="text-base sm:text-lg">Recent Activities</CardTitle>
+  </CardHeader>
+  <CardContent>
+    {activities.length > 0 ? (
+      <div className="space-y-3 sm:space-y-4">
+        {activities.map((activity) => (
+          <div key={activity.id} className="flex items-start space-x-3 sm:space-x-4">
+            <Activity className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
+            <div className="flex-1 min-w-0">
+              {/* Render action */}
+              <p className="text-sm font-medium">
+                {typeof activity.action === 'object' && 'name' in activity.action
+                  ? activity.action.name
+                  : activity.action}
               </p>
-            )}
-          </CardContent>
-        </Card>
+              {/* Render description */}
+              <p className="text-xs text-muted-foreground">
+                {typeof activity.description === 'object' && 'text' in activity.description
+                  ? activity.description.text
+                  : activity.description}
+              </p>
+            </div>
+            <div className="text-xs text-muted-foreground flex-shrink-0">
+              {new Date(activity.timestamp).toLocaleDateString()}
+            </div>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <p className="text-center text-muted-foreground py-4">
+        No recent activities
+      </p>
+    )}
+  </CardContent>
+</Card>
+    
         </div>
       </main>
     </div>

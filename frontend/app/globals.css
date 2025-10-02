@@ -154,3 +154,11 @@
     transform: translateY(-50%) scaleY(1);
   }
 }
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

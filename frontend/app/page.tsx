@@ -225,7 +225,7 @@ export default function Home() {
                     </span>
                   </div>
                   <h4 className="font-medium text-gray-900 text-sm">{school.name}</h4>
-                  <p className="text-xs text-gray-500 mt-1">{school.region}</p>
+                  <p className="text-xs text-gray-500 mt-1">{String(school.region ?? '')}</p>
                 </div>
               ))}
             </div>

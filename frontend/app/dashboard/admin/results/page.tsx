@@ -50,6 +50,9 @@ import {
   Eye,
   Edit,
   Trash2,
+  Medal,
+  CalendarDays,
+  MapPin,
 } from "lucide-react";
 
 export default function AdminResultsPage() {
@@ -69,17 +72,34 @@ export default function AdminResultsPage() {
   const medalTally = [
     { school: "School A", gold: 10, silver: 5, bronze: 3 },
     { school: "School B", gold: 8, silver: 7, bronze: 4 },
+    { school: "School C", gold: 6, silver: 4, bronze: 2 },
   ];
 
   const pastResults = [
-    { sport: "Basketball", champion: "School A", runnerUp: "School B" },
-    { sport: "Volleyball", champion: "School C", runnerUp: "School D" },
+    {
+      sport: "Basketball",
+      champion: "School A",
+      runnerUp: "School B",
+      date: "2025-10-05",
+      venue: "Gym A",
+      officials: "Referee X, Referee Y",
+      status: "Completed",
+    },
+    {
+      sport: "Volleyball",
+      champion: "School C",
+      runnerUp: "School D",
+      date: "2025-10-06",
+      venue: "Court 1",
+      officials: "Referee A, Referee B",
+      status: "Completed",
+    },
   ];
 
   return (
     <div className="flex-1 flex flex-col">
-      {/* Sticky header like in Schedules */}
-      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 flex h-12 shrink-0 items-center gap-2 border-b">
+      {/* Sticky header */}
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur flex h-12 shrink-0 items-center gap-2 border-b">
         <div className="flex items-center gap-2 px-4">
           <SidebarTrigger className="-ml-1" />
           <Separator orientation="vertical" className="mr-2 h-4" />
@@ -112,7 +132,7 @@ export default function AdminResultsPage() {
           <div>
             <h1 className="text-2xl font-bold">Results Management</h1>
             <p className="text-muted-foreground">
-              Track medal tallies and past competition results.
+              Manage medal tallies, past competitions, and match records.
             </p>
           </div>
           <div className="flex gap-2 mt-4 sm:mt-0">
@@ -143,9 +163,7 @@ export default function AdminResultsPage() {
               <CardTitle>Gold</CardTitle>
             </CardHeader>
             <CardContent>
-              <ScrollCounter
-                end={medalTally.reduce((a, b) => a + b.gold, 0)}
-              />
+              <ScrollCounter end={medalTally.reduce((a, b) => a + b.gold, 0)} />
             </CardContent>
           </Card>
           <Card className="text-center">
@@ -173,7 +191,7 @@ export default function AdminResultsPage() {
         {/* Filters + Tabs */}
         <Card>
           <CardHeader>
-            <CardTitle>Results</CardTitle>
+            <CardTitle>Competition Results</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-3">
@@ -191,13 +209,14 @@ export default function AdminResultsPage() {
               </div>
             </div>
 
-            {/* Tab content */}
+            {/* Overview */}
             {activeTab === "overview" && (
               <p className="text-muted-foreground">
-                Quick snapshot of the competition progress.
+                A quick snapshot of ongoing competitions and final standings.
               </p>
             )}
 
+            {/* Medal Tallies */}
             {activeTab === "medal-tallies" && (
               <Table>
                 <TableHeader>
@@ -254,6 +273,7 @@ export default function AdminResultsPage() {
               </Table>
             )}
 
+            {/* Past Results */}
             {activeTab === "past-results" && (
               <Table>
                 <TableHeader>
@@ -261,6 +281,14 @@ export default function AdminResultsPage() {
                     <TableHead>Sport</TableHead>
                     <TableHead>Champion</TableHead>
                     <TableHead>Runner Up</TableHead>
+                    <TableHead>
+                      <CalendarDays className="inline w-4 h-4 mr-1" /> Date
+                    </TableHead>
+                    <TableHead>
+                      <MapPin className="inline w-4 h-4 mr-1" /> Venue
+                    </TableHead>
+                    <TableHead>Officials</TableHead>
+                    <TableHead>Status</TableHead>
                     <TableHead>Actions</TableHead>
                   </TableRow>
                 </TableHeader>
@@ -272,6 +300,16 @@ export default function AdminResultsPage() {
                         <Badge>{row.champion}</Badge>
                       </TableCell>
                       <TableCell>{row.runnerUp}</TableCell>
+                      <TableCell>{row.date}</TableCell>
+                      <TableCell>{row.venue}</TableCell>
+                      <TableCell>{row.officials}</TableCell>
+                      <TableCell>
+                        <Badge
+                          variant={row.status === "Completed" ? "secondary" : "outline"}
+                        >
+                          {row.status}
+                        </Badge>
+                      </TableCell>
                       <TableCell>
                         <DropdownMenu>
                           <DropdownMenuTrigger asChild>
@@ -305,7 +343,7 @@ export default function AdminResultsPage() {
         </Card>
       </main>
 
-      {/* 🔒 Delete Confirmation Dialog */}
+      {/* Delete Confirmation Dialog */}
       <AlertDialog open={deleteDialogOpen} onOpenChange={setDeleteDialogOpen}>
         <AlertDialogContent>
           <AlertDialogHeader>
@@ -320,7 +358,6 @@ export default function AdminResultsPage() {
             <AlertDialogCancel>Cancel</AlertDialogCancel>
             <AlertDialogAction
               onClick={() => {
-                // 🔗 TODO: Hook up your API deletion here
                 console.log("Deleted:", selectedItem);
                 setDeleteDialogOpen(false);
               }}

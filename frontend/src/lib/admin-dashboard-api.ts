@@ -18,8 +18,8 @@ export interface DashboardStats {
 
 export interface RecentActivity {
   id: string;
-  action: string;
-  description: string;
+  action: string | { name: string }; // Allow action to be a string or an object with a name property
+  description: string | { text: string }; // Allow description to be a string or an object with a text property
   timestamp: string;
   type: 'athlete' | 'tournament' | 'schedule' | 'result' | 'school' | 'system';
   user?: string;

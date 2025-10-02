@@ -13,6 +13,18 @@ export const adminNavItems = [
       { title: "Tournaments", url: "/dashboard/admin/schedules/tournaments" },
     ]
   },
+  
+{
+  title: "Matches ",
+    url: "/dashboard/admin/matches",
+    icon: TrophyIcon,
+    items: [
+      { title: "Overview", url: "/dashboard/admin/matches" },
+      { title: "Upcoming Matches", url: "/dashboard/admin/matches/upcoming-matches" },
+      { title: "Standing", url: "/dashboard/admin/matches/standings" },
+    ]
+},
+
 {
     title: "Results",
     url: "/dashboard/admin/results",
@@ -24,7 +36,6 @@ export const adminNavItems = [
     ]
   },
 ];
-
 export const coachNavItems = [
   { title: "Dashboard", url: "/dashboard/coach", icon: HomeIcon },
   { title: "My Athletes", url: "/dashboard/coach/my-athletes", icon: UsersIcon },
